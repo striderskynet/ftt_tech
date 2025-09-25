@@ -9,23 +9,26 @@
 			* {
 				font-family: 'Open Sans', sans-serif;
 			}
+			html {
+				scroll-behavior: smooth;
+			}
 		</style>
 		<style type="text/tailwindcss">
 			@theme {
 				--color-custom-main: #003da5;
 				--color-custom-secondary: #7c878e;
 				--color-custom-accent: #013da5;
-				--color-custom-bg-gray: #585f64;
+				--color-custom-bg-gray: #252526;
 			}
 		</style>
-		<title>FF Technologies - Innovating the way we pay</title>
+		<title>Innovating the way we pay | FTTechnologies</title>
 	</head>
 	<body>
 		<!-- Component: Basic Navbar -->
 		<header
-			class="relative bir z-20 lg:pt-10 w-full bg-white/90 shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden"
+			class="relative z-20 w-full bir lg:pt-10 bg-white/90 shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden"
 		>
-			<div class="relative mx-auto max-w-full px-6 lg:ps-36 lg:pe-32">
+			<div class="relative max-w-full px-5 mx-auto lg:ps-36 lg:pe-32">
 				<nav
 					aria-label="main navigation"
 					class="flex h-[5.5rem] items-stretch justify-between text-custom-secondary"
@@ -36,12 +39,12 @@
 						id="WindUI"
 						aria-label="WindUI logo"
 						aria-current="page"
-						class="flex items-center font-bold gap-0.5 lg:text-[60px] whitespace-nowrap lg:flex-1"
+						class="flex items-center font-bold gap-0.5 whitespace-nowrap lg:flex-1"
 						href="/"
 					>
 						<!-- <svg
 							xmlns="http://www.w3.org/2000/svg"
-							class="text-custom-main mt-2 size-16"
+							class="mt-2 text-custom-main size-16"
 							viewBox="0 0 56 56"
 						>
 							<path
@@ -50,13 +53,17 @@
 							/>
 						</svg> -->
 						<img
-							src="/assets/logo/main.svg"
-							class="w-12 lg:w-18 mt-2 lg:ml-1"
+							src="/assets/logo/ftt_logo_full.svg"
+							class="hidden h-16 lg:flex"
 						/>
-						<span class="ml-2 flex gap-1 text-custom-main">
+						<img
+							src="/assets/logo/ftt_logo_min.svg"
+							class="flex h-8 image-cover lg:hidden"
+						/>
+						<!-- <span class="flex gap-1 ml-2 text-custom-main">
 							<img
 								src="/assets/logo/logo_f_letter.svg"
-								class="w-6 lg:w-10 mt-2"
+								class="w-6 mt-2 lg:w-10"
 							/>
 							<img
 								src="/assets/logo/logo_t_letter.svg"
@@ -67,11 +74,11 @@
 								class="w-10 mt-2 -me-1"
 							/>
 						</span>
-						<span class="mt-2">echnologies</span>
+						<span class="mt-2">echnologies</span> -->
 					</a>
 					<!-- Mobile trigger -->
 					<button
-						class="relative self-center order-10 visible block w-10 h-10 opacity-100 lg:hidden"
+						class="relative self-center order-10 visible block w-10 h-10 opacity-100 lg:hidden focus:!bg-custom-main focus:text-white duration-300 rounded-lg"
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
@@ -103,7 +110,7 @@
 								role="menuitem"
 								aria-haspopup="false"
 								class="flex items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-1"
-								href="javascript:void(0)"
+								href="/#our-solutions"
 							>
 								<span>Our Solutions</span></a
 							>
@@ -113,7 +120,7 @@
 								role="menuitem"
 								aria-haspopup="false"
 								class="flex items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-1"
-								href="javascript:void(0)"
+								href="/#partners-and-clients"
 							>
 								<span>Partners and Clients</span></a
 							>
@@ -123,7 +130,7 @@
 								role="menuitem"
 								aria-haspopup="false"
 								class="flex items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-1"
-								href="javascript:void(0)"
+								href="/#certifications"
 							>
 								<span>Certifications</span></a
 							>
@@ -133,7 +140,7 @@
 								role="menuitem"
 								aria-haspopup="false"
 								class="flex items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-1"
-								href="javascript:void(0)"
+								href="/#about-us"
 							>
 								<span>About Us</span></a
 							>
@@ -143,7 +150,7 @@
 								role="menuitem"
 								aria-haspopup="false"
 								class="flex items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-1"
-								href="javascript:void(0)"
+								href="/#in-the-media"
 							>
 								<span>In the Media</span></a
 							>
@@ -153,7 +160,7 @@
 								role="menuitem"
 								aria-haspopup="false"
 								class="flex items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-1"
-								href="javascript:void(0)"
+								href="/#contact"
 							>
 								<span>Contact Us</span></a
 							>
@@ -165,960 +172,1094 @@
 		<!-- End Basic Navbar-->
 
 		<!-- Start Basic Hero -->
-		<div class="min-h-[75vh] flex w-full p-5 pt-0">
-			<div class="w-1/2 flex justify-center items-center">
-				<div class="flex flex-col gap-10 max-w-2xl -mt-10">
-					<div class="text-2xl ml-2 font-bold">
-						PCI DSS, PCI SSLC, PCI PIN CERTIFIED
+		<div
+			class="min-h-screen lg:min-h-[80vh] flex flex-col w-full lg:p-5 pt-0"
+		>
+			<div class="flex flex-col-reverse mt-20 lg:flex-row lg:mt-16">
+				<div
+					class="flex items-end justify-center p-5 mt-5 lg:mt-0 lg:w-1/2"
+				>
+					<div class="flex flex-col w-full max-w-2xl">
+						<div class="text-lg font-bold lg:text-2xl lg:ml-2">
+							PCI DSS, PCI SSLC, PCI PIN CERTIFIED
+						</div>
+						<h1
+							class="mt-3 text-5xl font-semibold lg:mt-0 lg:text-7xl text-custom-main"
+						>
+							Innovating the way we pay
+						</h1>
+						<a
+							class="flex items-center px-10 mt-8 text-xl text-white duration-300 rounded-lg cursor-pointer lg:mt-5 lg:mt-16 max-w-max lg:px-20 lg:text-3xl h-14 bg-custom-main hover:bg-custom-main/90"
+							href="javascript:void(0)"
+						>
+							Talk to our team
+						</a>
 					</div>
-					<h1 class="text-8xl text-custom-main -mt-5">
-						Innovating the way we pay
-					</h1>
-					<a
-						class="flex mt-4 ml-4 max-w-max px-16 items-center text-xl h-12 bg-custom-main text-white rounded-lg"
-						href="javascript:void(0)"
-						>Talk to our team</a
-					>
+				</div>
+				<div class="flex items-end w-full lg:w-1/2 lg:p-5">
+					<img
+						src="/assets/media/FTTHERO-1067.jpg"
+						class="lg:rounded-b-xl"
+					/>
 				</div>
 			</div>
-			<div class="w-1/2 p-5 mt-16">
-				<img src="/assets/media/ftthero@1x.png" />
-			</div>
+			<div class="px-44"></div>
 		</div>
 		<!-- End Basic Hero -->
 
-		<!-- Start Basic Features -->
-		<div class="flex flex-col min-h-[75vh] items-center">
-			<h2 class="text-5xl/16 px-44 text-center">
-				Empowering financial institutions, payment facilitators, and
-				networks with cutting-edge payment software—engineered for the
-				acquirer side of the PCI ecosystem.
-			</h2>
-
+		<div class="">
+			<!-- Start Basic Features -->
 			<div
-				class="grid grid-cols-4 gap-5 mt-28 gap-16 px-36 text-center w-full"
+				class="flex flex-col items-center justify-center min-h-screen px-5 py-10 lg:py-20 lg:px-44"
 			>
-				<div
-					class="flex flex-col justify-center items-center gap-5 w-full aspect-[1/1.2]"
-				>
-					<img src="/assets/icons/path-83@1x.png" class="h-24" />
-					<span class="text-4xl font-semibold h-1/2">
-						+ 40 Financial Institutions
-					</span>
-				</div>
-				<div
-					class="flex flex-col gap-5 justify-center items-center w-full aspect-[1/1.2]"
-				>
-					<img src="/assets/icons/group-14-1@1x.png" class="h-24" />
-					<span class="text-4xl font-semibold h-1/2">
-						+ $4.5M processed annually
-					</span>
-				</div>
-				<div
-					class="flex flex-col gap-7 justify-center items-center w-full aspect-[1/1.2]"
-				>
-					<img src="/assets/icons/group-18@1x.png" class="h-24" />
-					<span class="text-4xl font-semibold h-1/2">
-						+ 2M transactions per day
-					</span>
-				</div>
-				<div
-					class="flex flex-col gap-5 justify-center items-center w-full aspect-[1/1.2]"
-				>
-					<img src="/assets/icons/group-20-2@1x.png" class="h-24" />
-					<span class="text-4xl font-semibold h-1/2">
-						+ 500K merchants processing on our platform
-					</span>
-				</div>
-			</div>
-		</div>
-		<!-- End Basic Features -->
-
-		<!-- Start Basic Solutions -->
-		<div class="min-h-screen bg-custom-bg-gray py-20">
-			<div class="flex flex-col pb-10">
-				<h2 class="text-4xl text-white px-44 font-bold">
-					Our Solutions
+				<h2 class="text-3xl text-center lg:text-5xl/16">
+					Empowering financial institutions, payment facilitators, and
+					networks with cutting-edge payment software—engineered for
+					the acquirer side of the PCI ecosystem.
 				</h2>
-				<span class="text-xl text-white mt-2 px-44">
-					Every client is unique, as are our solutions. We develop
-					customized technologies that adapt to the needs of your
-					business.
-				</span>
-			</div>
-			<div class="flex flex-col text-white">
-				<h2 class="text-3xl px-44 font-bold">Payment Solutions</h2>
-				<div class="grid grid-cols-2 px-44 mt-8">
-					<div class="flex flex-col">
-						<h2 class="text-2xl font-bold">Card Present</h2>
-						<div class="grid grid-cols-2 p-5 text-xl gap-5 h-full">
-							<div class="flex items-center gap-5">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="size-12"
-									viewBox="0 0 24 24"
-								>
-									<path
-										fill="currentColor"
-										d="M17 19H7V5h10m0-4H7c-1.11 0-2 .89-2 2v18a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2"
-									/>
-								</svg>
-								<span>Tap to Phone (T2P)</span>
-							</div>
-							<div class="flex items-center gap-5">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="size-12"
-									viewBox="0 0 24 24"
-								>
-									<path
-										fill="currentColor"
-										d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"
-									/>
-								</svg>
-								<span>Tablets</span>
-							</div>
-							<div class="flex items-center gap-5">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="size-12"
-									viewBox="0 0 24 24"
-								>
-									<path
-										fill="currentColor"
-										d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m0 2v4h10V4zm0 6v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2z"
-									/>
-								</svg>
-								<span>mPOS/POS</span>
-							</div>
-							<div class="flex items-center gap-5">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="size-12"
-									viewBox="0 0 24 24"
-								>
-									<path
-										fill="currentColor"
-										d="M16.5 15.5H22V17h-5.5v1.75l-2.5-2.5l2.5-2.5zm3 4.25V18l2.5 2.5l-2.5 2.5v-1.75H14v-1.5zM9.5 5.5a2 2 0 0 1-2-2a2 2 0 0 1 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2M5.75 8.9L4 9.65V13H2V8.3l5.25-2.15Q7.625 6 8 6c.7 0 1.35.35 1.7.95l.95 1.6C11.55 10 13.15 11 15 11v2c-2.2 0-4.15-1-5.45-2.6l-.6 3L11 15.45V23H9v-6l-2.15-2l-1.75 8H3z"
-									/>
-								</svg>
-								<span>Transit</span>
-							</div>
-							<div class="flex items-center gap-5"></div>
-							<div class="flex items-center gap-5"></div>
-						</div>
-						<a
-							class="mt-5 relative border rounded-lg max-w-max px-8 border-2 h-14 flex items-center text-sm border-white hover:bg-white duration-300 group/link"
-							href="javascript:void(0)"
-						>
-							<span
-								class="absolute left-1/2 -translate-x-1/2 group-hover/link:opacity-0"
-								>Request a demo</span
-							>
-							<span
-								class="opacity-0 text-black group-hover/link:opacity-100"
-								>I'm interested in a demo</span
-							>
-						</a>
-					</div>
-					<div class="flex flex-col">
-						<h2 class="text-2xl font-bold">Card NoT Present</h2>
-						<div class="grid grid-cols-2 p-5 text-xl gap-5 h-full">
-							<div class="flex items-center gap-5">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="size-12"
-									viewBox="0 0 24 24"
-								>
-									<path
-										fill="currentColor"
-										d="M17 19H7V5h10m0-4H7c-1.11 0-2 .89-2 2v18a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2"
-									/>
-								</svg>
-								<span>Shopping Cart</span>
-							</div>
-							<div class="flex items-center gap-5">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="size-12"
-									viewBox="0 0 24 24"
-								>
-									<path
-										fill="currentColor"
-										d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"
-									/>
-								</svg>
-								<span>QR</span>
-							</div>
-							<div class="flex items-center gap-5">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="size-12"
-									viewBox="0 0 24 24"
-								>
-									<path
-										fill="currentColor"
-										d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m0 2v4h10V4zm0 6v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2z"
-									/>
-								</svg>
-								<span>Card on File</span>
-							</div>
-							<div class="flex items-center gap-5">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="size-12"
-									viewBox="0 0 24 24"
-								>
-									<path
-										fill="currentColor"
-										d="M16.5 15.5H22V17h-5.5v1.75l-2.5-2.5l2.5-2.5zm3 4.25V18l2.5 2.5l-2.5 2.5v-1.75H14v-1.5zM9.5 5.5a2 2 0 0 1-2-2a2 2 0 0 1 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2M5.75 8.9L4 9.65V13H2V8.3l5.25-2.15Q7.625 6 8 6c.7 0 1.35.35 1.7.95l.95 1.6C11.55 10 13.15 11 15 11v2c-2.2 0-4.15-1-5.45-2.6l-.6 3L11 15.45V23H9v-6l-2.15-2l-1.75 8H3z"
-									/>
-								</svg>
-								<span>P2P</span>
-							</div>
-							<div class="flex items-center gap-5">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="size-12"
-									viewBox="0 0 24 24"
-								>
-									<path
-										fill="currentColor"
-										d="M16.5 15.5H22V17h-5.5v1.75l-2.5-2.5l2.5-2.5zm3 4.25V18l2.5 2.5l-2.5 2.5v-1.75H14v-1.5zM9.5 5.5a2 2 0 0 1-2-2a2 2 0 0 1 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2M5.75 8.9L4 9.65V13H2V8.3l5.25-2.15Q7.625 6 8 6c.7 0 1.35.35 1.7.95l.95 1.6C11.55 10 13.15 11 15 11v2c-2.2 0-4.15-1-5.45-2.6l-.6 3L11 15.45V23H9v-6l-2.15-2l-1.75 8H3z"
-									/>
-								</svg>
-								<span>Payment Link</span>
-							</div>
-						</div>
-						<a
-							class="mt-5 text-sm relative border rounded-lg max-w-max px-8 border-2 h-14 flex items-center border-white hover:bg-white duration-300 group/link"
-							href="javascript:void(0)"
-						>
-							<span
-								class="absolute left-1/2 -translate-x-1/2 group-hover/link:opacity-0"
-								>Request a demo</span
-							>
-							<span
-								class="opacity-0 text-black group-hover/link:opacity-100"
-								>I'm interested in a demo</span
-							>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="flex flex-col text-white mt-20">
-				<h2 class="text-3xl px-44 font-bold">Platform Solutions</h2>
-				<div class="grid grid-cols-2 px-44 mt-8 gap-10">
-					<div class="grid grid-cols-2">
-						<img src="/assets/media/image-1@1x.png" />
-						<div class="flex flex-col px-5">
-							<div class="font-bold text-2xl">
-								Processing, Clearing Settlement capabilities
-							</div>
-							<div class="text-2xl">
-								Cloud based transactional switching, connecting
-								networks and merchants.
-							</div>
 
-							<a
-								class="mt-5 text-sm relative border rounded-lg max-w-max px-8 border-2 h-10 flex items-center border-white hover:bg-white duration-300 group/link"
-								href="javascript:void(0)"
-							>
-								<span
-									class="absolute left-1/2 -translate-x-1/2 group-hover/link:opacity-0"
-									>Request a demo</span
-								>
-								<span
-									class="opacity-0 text-black group-hover/link:opacity-100"
-									>I'm interested in a demo</span
-								>
-							</a>
-						</div>
-					</div>
-
-					<div class="grid grid-cols-2">
-						<img src="/assets/media/image-1@1x.png" />
-						<div class="flex flex-col px-5">
-							<div class="font-bold text-2xl">
-								Reporting and Onboarding Services
-							</div>
-							<div class="text-2xl">
-								Real-time data visibility with fast and guided
-								onboarding for your business.
-							</div>
-
-							<a
-								class="mt-5 text-sm relative border rounded-lg max-w-max px-8 border-2 h-10 flex items-center border-white hover:bg-white duration-300 group/link"
-								href="javascript:void(0)"
-							>
-								<span
-									class="absolute left-1/2 -translate-x-1/2 group-hover/link:opacity-0"
-									>Request a demo</span
-								>
-								<span
-									class="opacity-0 text-black group-hover/link:opacity-100"
-									>I'm interested in a demo</span
-								>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Basic Solutions -->
-
-		<!-- Start Logo Cloud -->
-		<div class="flex flex-col min-h-[50vh] py-20">
-			<div class="flex flex-col pb-10">
-				<h2 class="text-4xl text-custom-main px-44 font-bold">
-					Partners and Clients
-				</h2>
-				<span class="text-xl mt-2 px-44">
-					We have successfully deployed solutions globally.
-				</span>
-			</div>
-
-			<div class="w-full px-44 grid grid-cols-8 min-h-[40vh]">
-				<div class="w-full h-full col-span-4 flex">
+				<div
+					class="grid w-full grid-cols-1 gap-16 mt-12 text-center lg:grid-cols-4 lg:mt-28 lg:px-36"
+				>
 					<div
-						class="relative border-l border-dashed border-gray-700 my-5 w-5"
+						class="flex flex-col justify-center items-center gap-5 w-full lg:aspect-[1/1.2]"
 					>
-						<div
-							class="flex size-4 rounded-full border-4 border-black bg-white absolute -top-2 -translate-x-1/2"
-						></div>
-					</div>
-					<div class="w-full h-full flex flex-col">
-						<h2 class="text-4xl font-bold">
-							Financial Institutions
-						</h2>
-						<div
-							class="grid grid-cols-4 p-5 gap-5 [&>img]:hover:scale-110 [&>img]:duration-300"
-						>
-							<img
-								src="/assets/logo_cloud/if-bancoagricola-1@1x.png"
-							/>
-							<img
-								src="/assets/logo_cloud/if-serfinsa-1@1x.png"
-							/>
-							<img src="/assets/logo_cloud/if-ficohsa-1@1x.png" />
-							<img
-								alt="TotalNet"
-								src="/assets/logo_cloud/image-15-1@1x.png"
-								class="saturate-0"
-							/>
-							<img
-								src="/assets/logo_cloud/if-sistarbanc-1@1x.png"
-							/>
-							<img
-								src="/assets/logo_cloud/if-redenlace-1@1x.png"
-							/>
-							<img
-								src="/assets/logo_cloud/if-credicorpbank-1@1x.png"
-							/>
-							<img
-								alt="Banco General"
-								src="/assets/logo_cloud/image-11-1@1x.png"
-								class="saturate-0"
-							/>
-							<img
-								src="/assets/logo_cloud/if-coopenae-1@1x.png"
-							/>
-							<img src="/assets/logo_cloud/if-neonet-1@1x.png" />
-							<img src="/assets/logo_cloud/if-banpais-1@1x.png" />
-							<img
-								src="/assets/logo_cloud/if-grupopromerica-1@1x.png"
-							/>
-							<img
-								src="/assets/logo_cloud/if-bancolafise-1@1x.png"
-							/>
-							<img
-								src="/assets/logo_cloud/if-banconacional-1@1x.png"
-							/>
-							<img
-								src="/assets/logo_cloud/if-cuscatlan-1@1x.png"
-							/>
-							<img
-								src="/assets/logo_cloud/if-bancopopular-1@1x.png"
-							/>
-							<img
-								src="/assets/logo_cloud/if-bancoindustrial-1@1x.png"
-							/>
-						</div>
-					</div>
-				</div>
-				<div class="w-full h-full col-span-2 flex">
-					<div
-						class="relative border-l border-dashed border-gray-700 my-5 w-5"
-					>
-						<div
-							class="flex size-4 rounded-full border-4 border-black bg-white absolute -top-2 -translate-x-1/2"
-						></div>
-					</div>
-					<div class="w-full h-full flex flex-col">
-						<h2 class="text-4xl font-bold">Payfacs</h2>
-						<div
-							class="grid grid-cols-2 p-5 gap-5 [&>img]:hover:scale-110 [&>img]:duration-300"
-						>
-							<img
-								src="/assets/logo_cloud/pf-naranjax-1@1x.png"
-							/>
-							<img
-								src="/assets/logo_cloud/pf-venitran-1@1x.png"
-							/>
-							<img
-								src="/assets/logo_cloud/pf-pagoplux-1@1x.png"
-							/>
-							<img src="/assets/logo_cloud/pf-n1co-1@1x.png" />
-							<img src="/assets/logo_cloud/pf-bepsa-1@1x.png" />
-							<img
-								src="/assets/logo_cloud/pf-payphone-1@1x.png"
-							/>
-							<img src="/assets/logo_cloud/pf-handy-1@1x.png" />
-							<img src="/assets/logo_cloud/pf-mio-1@1x.png" />
-							<img src="/assets/logo_cloud/pf-sonda-1@1x.png" />
-							<img
-								src="/assets/logo_cloud/image-12@1x.png"
-								class="saturate-0"
-							/>
-							<img
-								alt="mytapp"
-								src="/assets/logo_cloud/"
-								class="saturate-0 border border-gray-200 border-dotted h-10"
-							/>
-						</div>
-					</div>
-				</div>
-				<div class="w-full h-full col-span-2 flex">
-					<div
-						class="relative border-l border-dashed border-gray-700 my-5 w-5"
-					>
-						<div
-							class="flex size-4 rounded-full border-4 border-black bg-white absolute -top-2 -translate-x-1/2"
-						></div>
-					</div>
-					<div class="w-full h-full flex flex-col">
-						<h2 class="text-4xl font-bold">Networks</h2>
-						<div
-							class="grid grid-cols-1 p-5 gap-20 [&>img]:hover:scale-110 [&>img]:duration-300"
-						>
-							<div class="h-10 flex flex-col items-start mt-10">
-								<img
-									class="h-10 object-contain saturate-0"
-									src="/assets/logo_cloud/image-13@1x.png"
-								/>
-								<a
-									href="javascript:void(0)"
-									class="text-sm text-custom-main mt-3"
-									>Go to Visa >></a
-								>
-							</div>
-							<div class="h-10">
-								<img
-									class="h-16 saturate-0"
-									src="/assets/logo_cloud/master_card.png"
-								/>
-								<a
-									href="javascript:void(0)"
-									class="text-sm text-custom-main mt-3"
-									>Go to MasterCard >></a
-								>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Logo Cloud -->
-
-		<!-- Start Basic Certifications -->
-		<div class="bg-custom-bg-gray py-20">
-			<div class="flex flex-col pb-5">
-				<h2 class="text-4xl text-white px-44 font-bold">
-					Certifications
-				</h2>
-				<div class="grid grid-cols-3 px-44 mt-8 gap-20">
-					<img
-						src="/assets/media/pci-dss@1x.png"
-						class="rounded-2xl"
-					/>
-					<img
-						src="/assets/media/pci-sslc@1x.png"
-						class="rounded-2xl"
-					/>
-					<img
-						src="/assets/media/pci-dss-3@1x.png"
-						class="rounded-2xl"
-					/>
-				</div>
-			</div>
-			<div class="px-44 flex justify-end">
-				<a
-					class="mt-5 text-sm text-white relative border rounded-lg max-w-max px-18 border-2 h-10 flex items-center border-white hover:bg-white duration-300 group/link"
-					href="javascript:void(0)"
-				>
-					<span
-						class="absolute left-1/2 -translate-x-1/2 group-hover/link:opacity-0"
-						>Verify certifications</span
-					>
-					<span
-						class="opacity-0 text-black group-hover/link:opacity-100"
-						>Verify certificate</span
-					>
-				</a>
-			</div>
-		</div>
-		<!-- End Basic Certifications -->
-
-		<!-- Start Basic About -->
-		<div class="min-h-screen py-20">
-			<div class="flex flex-col pb-10">
-				<h2 class="text-4xl text-custom-main px-44 font-bold">
-					About Us
-				</h2>
-				<span class="text-xl mt-10 px-44 gap-5 flex flex-col">
-					<p>
-						Founded in 2008, FTTechnologies is a trusted provider of
-						cutting-edge electronic payment solutions for financial
-						institutions, payment facilitators, and networks
-						worldwide. With over 15 years of industry expertise, we
-						deliver secure, agile, and scalable systems that meet
-						the highest international standards, including PCI,
-						Visa, and MasterCard compliance.
-					</p>
-					<p>
-						Driven by a global vision, our team blends deep domain
-						knowledge with a culture of innovation, collaboration,
-						and adaptability. We design flexible solutions that
-						evolve with your business, empowering you to navigate
-						the dynamic digital payments landscape with confidence.
-					</p>
-					<p>
-						At FT Technologies, we champion financial inclusion and
-						digital transformation. Our commitment to continuous
-						innovation helps clients grow, enhance their brand
-						value, and expand into global markets—securely and
-						seamlessly.
-					</p>
-				</span>
-			</div>
-
-			<div class="flex flex-col pb-10">
-				<h2 class="text-4xl px-44 font-bold">Highlights</h2>
-				<div class="grid grid-cols-3 mt-10 px-44 gap-5">
-					<div class="text-xl">
-						<h2 class="font-bold">2008</h2>
-						<p>
-							Company funded. First IVR payment solution delivered
-						</p>
-					</div>
-					<div class="text-xl">
-						<h2 class="font-bold">2019</h2>
-						<p>
-							First company that implement productive TapToPhone
-							with Visa in LATAM. (Banco Popular Costa Rica)
-						</p>
-					</div>
-					<div class="text-xl">
-						<h2 class="font-bold">2022</h2>
-						<p>
-							Metro Panama (MTT) processing in the Cloud. (Visa -
-							Credicorp Bank)
-						</p>
-					</div>
-					<div class="text-xl">
-						<h2 class="font-bold">2015</h2>
-						<p>
-							VisaNet Guatemala Processing Platform Migration.
-							(1MM Transactions per day)
-						</p>
-					</div>
-					<div class="text-xl">
-						<h2 class="font-bold">2020</h2>
-						<p>Visa Everywhere Initiative LAC</p>
-					</div>
-					<div class="text-xl">
-						<h2 class="font-bold">2022</h2>
-						<p>
-							First Global TapToPhone card present implementation
-							with PIN through Cybersource. (Libélula Payfacs
-							Bolivia)
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Basic About -->
-
-		<!-- Start Basic Media -->
-		<div class="bg-custom-bg-gray py-20">
-			<div class="flex flex-col pb-5">
-				<h2 class="text-4xl text-white px-44 font-bold">
-					In the Media
-				</h2>
-				<div class="grid grid-cols-3 px-44 mt-8 gap-20">
-					<div>
 						<img
-							src="/assets/media/fttandvisaacceptancesolutions@1x.png"
+							src="/assets/icons/path-83@1x.png"
+							class="h-16 lg:h-24"
+						/>
+						<span class="text-xl font-semibold lg:text-4xl h-1/2">
+							+ 40 Financial Institutions
+						</span>
+					</div>
+					<div
+						class="flex flex-col gap-5 justify-center items-center w-full lg:aspect-[1/1.2]"
+					>
+						<img
+							src="/assets/icons/group-14-1@1x.png"
+							class="h-16 lg:h-24"
+						/>
+						<span class="text-xl font-semibold lg:text-4xl h-1/2">
+							+ $4.5M processed annually
+						</span>
+					</div>
+					<div
+						class="flex flex-col gap-7 justify-center items-center w-full lg:aspect-[1/1.2]"
+					>
+						<img
+							src="/assets/icons/group-18@1x.png"
+							class="h-16 lg:h-24"
+						/>
+						<span class="text-xl font-semibold lg:text-4xl h-1/2">
+							+ 2M transactions per day
+						</span>
+					</div>
+					<div
+						class="flex flex-col gap-5 justify-center items-center w-full lg:aspect-[1/1.2]"
+					>
+						<img
+							src="/assets/icons/group-20-2@1x.png"
+							class="h-16 lg:h-24"
+						/>
+						<span class="text-xl font-semibold lg:text-4xl h-1/2">
+							+ 500K merchants processing on our platform
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- End Basic Features -->
+
+			<!-- Start Basic Solutions -->
+			<div
+				id="our-solutions"
+				class="flex flex-col justify-center min-h-screen gap-10 py-20 px-44 bg-custom-bg-gray"
+			>
+				<div class="flex flex-col">
+					<h2 class="text-4xl font-bold text-white">Our Solutions</h2>
+					<span class="mt-2 text-xl text-white">
+						Every client is unique, as are our solutions. We develop
+						customized technologies that adapt to the needs of your
+						business.
+					</span>
+				</div>
+				<div class="flex flex-col text-white">
+					<h2 class="text-3xl font-bold">Payment Solutions</h2>
+					<div class="grid grid-cols-2 mt-8">
+						<div class="flex flex-col">
+							<h2 class="text-2xl font-bold">Card Present</h2>
+							<div
+								class="grid h-full grid-cols-2 gap-5 p-5 text-xl"
+							>
+								<div class="flex items-center gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="size-12"
+										viewBox="0 0 24 24"
+									>
+										<path
+											fill="currentColor"
+											d="M17 19H7V5h10m0-4H7c-1.11 0-2 .89-2 2v18a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2"
+										/>
+									</svg>
+									<span>Tap to Phone (T2P)</span>
+								</div>
+								<div class="flex items-center gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="size-12"
+										viewBox="0 0 24 24"
+									>
+										<path
+											fill="currentColor"
+											d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"
+										/>
+									</svg>
+									<span>Tablets</span>
+								</div>
+								<div class="flex items-center gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="size-12"
+										viewBox="0 0 24 24"
+									>
+										<path
+											fill="currentColor"
+											d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m0 2v4h10V4zm0 6v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2z"
+										/>
+									</svg>
+									<span>mPOS/POS</span>
+								</div>
+								<div class="flex items-center gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="size-12"
+										viewBox="0 0 24 24"
+									>
+										<path
+											fill="currentColor"
+											d="M16.5 15.5H22V17h-5.5v1.75l-2.5-2.5l2.5-2.5zm3 4.25V18l2.5 2.5l-2.5 2.5v-1.75H14v-1.5zM9.5 5.5a2 2 0 0 1-2-2a2 2 0 0 1 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2M5.75 8.9L4 9.65V13H2V8.3l5.25-2.15Q7.625 6 8 6c.7 0 1.35.35 1.7.95l.95 1.6C11.55 10 13.15 11 15 11v2c-2.2 0-4.15-1-5.45-2.6l-.6 3L11 15.45V23H9v-6l-2.15-2l-1.75 8H3z"
+										/>
+									</svg>
+									<span>Transit</span>
+								</div>
+								<div class="flex items-center gap-5"></div>
+								<div class="flex items-center gap-5"></div>
+							</div>
+							<a
+								class="relative flex items-center px-8 mt-5 text-sm duration-300 border border-2 border-white rounded-lg max-w-max h-14 hover:bg-white group/link"
+								href="javascript:void(0)"
+							>
+								<span
+									class="absolute -translate-x-1/2 left-1/2 group-hover/link:opacity-0"
+									>Request a demo</span
+								>
+								<span
+									class="text-black opacity-0 group-hover/link:opacity-100"
+									>I'm interested in a demo</span
+								>
+							</a>
+						</div>
+						<div class="flex flex-col">
+							<h2 class="text-2xl font-bold">Card NoT Present</h2>
+							<div
+								class="grid h-full grid-cols-2 gap-5 p-5 text-xl"
+							>
+								<div class="flex items-center gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="size-12"
+										viewBox="0 0 24 24"
+									>
+										<path
+											fill="currentColor"
+											d="M17 19H7V5h10m0-4H7c-1.11 0-2 .89-2 2v18a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2"
+										/>
+									</svg>
+									<span>Shopping Cart</span>
+								</div>
+								<div class="flex items-center gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="size-12"
+										viewBox="0 0 24 24"
+									>
+										<path
+											fill="currentColor"
+											d="M19 18H5V6h14m2-2H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"
+										/>
+									</svg>
+									<span>QR</span>
+								</div>
+								<div class="flex items-center gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="size-12"
+										viewBox="0 0 24 24"
+									>
+										<path
+											fill="currentColor"
+											d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m0 2v4h10V4zm0 6v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2zm-8 4v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2z"
+										/>
+									</svg>
+									<span>Card on File</span>
+								</div>
+								<div class="flex items-center gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="size-12"
+										viewBox="0 0 24 24"
+									>
+										<path
+											fill="currentColor"
+											d="M16.5 15.5H22V17h-5.5v1.75l-2.5-2.5l2.5-2.5zm3 4.25V18l2.5 2.5l-2.5 2.5v-1.75H14v-1.5zM9.5 5.5a2 2 0 0 1-2-2a2 2 0 0 1 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2M5.75 8.9L4 9.65V13H2V8.3l5.25-2.15Q7.625 6 8 6c.7 0 1.35.35 1.7.95l.95 1.6C11.55 10 13.15 11 15 11v2c-2.2 0-4.15-1-5.45-2.6l-.6 3L11 15.45V23H9v-6l-2.15-2l-1.75 8H3z"
+										/>
+									</svg>
+									<span>P2P</span>
+								</div>
+								<div class="flex items-center gap-5">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="size-12"
+										viewBox="0 0 24 24"
+									>
+										<path
+											fill="currentColor"
+											d="M16.5 15.5H22V17h-5.5v1.75l-2.5-2.5l2.5-2.5zm3 4.25V18l2.5 2.5l-2.5 2.5v-1.75H14v-1.5zM9.5 5.5a2 2 0 0 1-2-2a2 2 0 0 1 2-2a2 2 0 0 1 2 2a2 2 0 0 1-2 2M5.75 8.9L4 9.65V13H2V8.3l5.25-2.15Q7.625 6 8 6c.7 0 1.35.35 1.7.95l.95 1.6C11.55 10 13.15 11 15 11v2c-2.2 0-4.15-1-5.45-2.6l-.6 3L11 15.45V23H9v-6l-2.15-2l-1.75 8H3z"
+										/>
+									</svg>
+									<span>Payment Link</span>
+								</div>
+							</div>
+							<a
+								class="relative flex items-center px-8 mt-5 text-sm duration-300 border border-2 border-white rounded-lg max-w-max h-14 hover:bg-white group/link"
+								href="javascript:void(0)"
+							>
+								<span
+									class="absolute -translate-x-1/2 left-1/2 group-hover/link:opacity-0"
+									>Request a demo</span
+								>
+								<span
+									class="text-black opacity-0 group-hover/link:opacity-100"
+									>I'm interested in a demo</span
+								>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-col text-white">
+					<h2 class="text-3xl font-bold">Platform Solutions</h2>
+					<div class="grid grid-cols-2 gap-10 mt-8">
+						<div class="grid grid-cols-2">
+							<img src="/assets/media/image-1@1x.png" />
+							<div class="flex flex-col px-5">
+								<div class="text-2xl font-bold">
+									Processing, Clearing Settlement capabilities
+								</div>
+								<div class="text-2xl">
+									Cloud based transactional switching,
+									connecting networks and merchants.
+								</div>
+
+								<a
+									class="relative flex items-center h-10 px-8 mt-5 text-sm duration-300 border border-2 border-white rounded-lg max-w-max hover:bg-white group/link"
+									href="javascript:void(0)"
+								>
+									<span
+										class="absolute -translate-x-1/2 left-1/2 group-hover/link:opacity-0"
+										>Request a demo</span
+									>
+									<span
+										class="text-black opacity-0 group-hover/link:opacity-100"
+										>I'm interested in a demo</span
+									>
+								</a>
+							</div>
+						</div>
+
+						<div class="grid grid-cols-2">
+							<img src="/assets/media/image-1@1x.png" />
+							<div class="flex flex-col px-5">
+								<div class="text-2xl font-bold">
+									Reporting and Onboarding Services
+								</div>
+								<div class="text-2xl">
+									Real-time data visibility with fast and
+									guided onboarding for your business.
+								</div>
+
+								<a
+									class="relative flex items-center h-10 px-8 mt-5 text-sm duration-300 border border-2 border-white rounded-lg max-w-max hover:bg-white group/link"
+									href="javascript:void(0)"
+								>
+									<span
+										class="absolute -translate-x-1/2 left-1/2 group-hover/link:opacity-0"
+										>Request a demo</span
+									>
+									<span
+										class="text-black opacity-0 group-hover/link:opacity-100"
+										>I'm interested in a demo</span
+									>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Basic Solutions -->
+
+			<!-- Start Logo Cloud -->
+			<div
+				id="partners-and-clients"
+				class="flex flex-col min-h-screen px-5 py-10 lg:justify-center lg:py-20 lg:px-44"
+			>
+				<div class="flex flex-col pb-10">
+					<h2 class="text-4xl font-bold text-custom-main">
+						Partners and Clients
+					</h2>
+					<span class="mt-2 text-xl">
+						We have successfully deployed solutions globally.
+					</span>
+				</div>
+
+				<div
+					class="grid w-full grid-cols-1 gap-5 lg:gap-0 lg:grid-cols-8"
+				>
+					<div class="flex w-full h-full lg:col-span-4">
+						<div
+							class="relative w-5 my-5 border-l border-gray-400 border-dashed"
+						>
+							<div
+								class="absolute flex -translate-x-1/2 bg-white border-4 border-black rounded-full size-4 -top-2"
+							></div>
+						</div>
+						<div class="flex flex-col w-full h-full">
+							<h2 class="text-3xl font-bold lg:text-4xl">
+								Financial Institutions
+							</h2>
+							<div
+								class="grid grid-cols-2 lg:grid-cols-4 p-2 lg:p-5 gap-2 [&>img]:p-1 [&>img]:border [&>img]:border-gray-100 [&>img]:rounded-lg [&>img]:hover:shadow-xl [&>img]:h-14 [&>img]:w-full [&>img]:object-contain [&>img]:hover:scale-110 [&>img]:duration-300"
+							>
+								<img
+									src="/assets/logo_cloud/if-bancoagricola-1@1x.png"
+								/>
+								<img
+									src="/assets/logo_cloud/if-serfinsa-1@1x.png"
+								/>
+								<img
+									src="/assets/logo_cloud/if-ficohsa-1@1x.png"
+								/>
+								<img
+									alt="TotalNet"
+									src="/assets/logo_cloud/image-15-1@1x.png"
+									class="saturate-0"
+								/>
+								<img
+									src="/assets/logo_cloud/if-sistarbanc-1@1x.png"
+								/>
+								<img
+									src="/assets/logo_cloud/if-redenlace-1@1x.png"
+								/>
+								<img
+									src="/assets/logo_cloud/if-credicorpbank-1@1x.png"
+								/>
+								<img
+									alt="Banco General"
+									src="/assets/logo_cloud/image-11-1@1x.png"
+									class="saturate-0"
+								/>
+								<img
+									src="/assets/logo_cloud/if-coopenae-1@1x.png"
+								/>
+								<img
+									src="/assets/logo_cloud/if-neonet-1@1x.png"
+								/>
+								<img
+									src="/assets/logo_cloud/if-banpais-1@1x.png"
+								/>
+								<img
+									src="/assets/logo_cloud/if-grupopromerica-1@1x.png"
+								/>
+								<img
+									src="/assets/logo_cloud/if-bancolafise-1@1x.png"
+								/>
+								<img
+									src="/assets/logo_cloud/if-banconacional-1@1x.png"
+								/>
+								<img
+									src="/assets/logo_cloud/if-cuscatlan-1@1x.png"
+								/>
+								<img
+									src="/assets/logo_cloud/if-bancopopular-1@1x.png"
+								/>
+								<img
+									src="/assets/logo_cloud/if-bancoindustrial-1@1x.png"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="flex w-full h-full lg:col-span-2">
+						<div
+							class="relative w-5 my-5 border-l border-gray-400 border-dashed"
+						>
+							<div
+								class="absolute flex -translate-x-1/2 bg-white border-4 border-black rounded-full size-4 -top-2"
+							></div>
+						</div>
+						<div class="flex flex-col w-full h-full">
+							<h2 class="text-3xl font-bold lg:text-4xl">
+								Payfacs
+							</h2>
+							<div
+								class="grid grid-cols-2 p-2 lg:p-5 gap-2 [&>img]:p-1 [&>img]:border [&>img]:border-gray-100 [&>img]:rounded-lg [&>img]:hover:shadow-xl [&>img]:h-14 [&>img]:w-full [&>img]:object-contain [&>img]:hover:scale-110 [&>img]:duration-300"
+							>
+								<img
+									src="/assets/logo_cloud/pf-naranjax-1@1x.png"
+								/>
+
+								<img
+									src="/assets/logo_cloud/pf-venitran-1@1x.png"
+								/>
+								<img
+									src="/assets/logo_cloud/pf-pagoplux-1@1x.png"
+								/>
+								<img
+									src="/assets/logo_cloud/pf-n1co-1@1x.png"
+								/>
+								<img
+									src="/assets/logo_cloud/pf-bepsa-1@1x.png"
+								/>
+								<img
+									src="/assets/logo_cloud/pf-payphone-1@1x.png"
+								/>
+								<img
+									src="/assets/logo_cloud/pf-handy-1@1x.png"
+								/>
+								<img src="/assets/logo_cloud/pf-mio-1@1x.png" />
+								<img
+									src="/assets/logo_cloud/pf-sonda-1@1x.png"
+								/>
+								<img
+									src="/assets/logo_cloud/image-12@1x.png"
+									class="saturate-0"
+								/>
+								<img
+									src="/assets/logo_cloud/pf-myTapp-1@1x.png"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="flex w-full h-full lg:col-span-2">
+						<div
+							class="relative w-5 my-5 border-l border-gray-400 border-dashed"
+						>
+							<div
+								class="absolute flex -translate-x-1/2 bg-white border-4 border-black rounded-full size-4 -top-2"
+							></div>
+						</div>
+						<div class="flex flex-col w-full h-full">
+							<h2 class="text-3xl font-bold lg:text-4xl">
+								Networks
+							</h2>
+							<div class="grid grid-cols-1 gap-5 p-2 lg:p-5">
+								<div
+									class="flex flex-col items-start gap-2 p-3 border border-gray-100 rounded-lg"
+								>
+									<img
+										class="h-10 saturate-0"
+										src="/assets/logo_cloud/image-13@1x.png"
+									/>
+									<a
+										target="_blank"
+										href="https://partner.visa.com/site/partner-directory/ft-technologies.html"
+										class="ml-2 text-sm duration-300 text-custom-main hover:saturate-200"
+										>Go to Visa >></a
+									>
+								</div>
+								<div
+									class="flex flex-col items-start gap-2 p-3 border border-gray-100 rounded-lg"
+								>
+									<img
+										class="h-16 saturate-0"
+										src="/assets/logo_cloud/master_card.svg"
+									/>
+									<a
+										target="_blank"
+										href="https://www.mastercard.com/content/dam/public/mastercardcom/globalrisk/pdf/SP_Post_List_11-01-24.pdf"
+										class="ml-2 text-sm duration-300 text-custom-main hover:saturate-200"
+										>Go to MasterCard >></a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Logo Cloud -->
+
+			<!-- Start Basic Certifications -->
+			<div
+				id="certifications"
+				class="flex flex-col justify-center min-h-screen px-5 py-10 lg:px-44 lg:py-20 bg-custom-bg-gray"
+			>
+				<div class="flex flex-col pb-5">
+					<h2 class="text-4xl font-bold text-white">
+						Certifications
+					</h2>
+					<div
+						class="grid grid-cols-1 gap-10 mt-8 lg:gap-20 lg:grid-cols-3"
+					>
+						<img
+							src="/assets/media/pci-dss@1x.png"
+							class="rounded-2xl"
+						/>
+						<img
+							src="/assets/media/pci-sslc@1x.png"
+							class="rounded-2xl"
+						/>
+						<img
+							src="/assets/media/pci-dss-3@1x.png"
 							class="rounded-2xl"
 						/>
 					</div>
-					<div class="col-span-2 flex flex-col text-white">
-						<div class="flex-col flex gap-5 text-xl">
+				</div>
+				<div class="flex justify-center lg:justify-end">
+					<a
+						target="_blank"
+						class="relative flex items-center h-10 mt-5 text-sm text-white duration-300 border border-2 border-white rounded-lg max-w-max px-18 hover:bg-white hover:text-black group/link"
+						href="https://listings.pcisecuritystandards.org/assessors_and_solutions/software_lifecycle?reference=24-24.01307.001&agree=true"
+					>
+						<span class="">Verify certifications</span>
+					</a>
+				</div>
+			</div>
+			<!-- End Basic Certifications -->
+
+			<!-- Start Basic About -->
+			<div
+				id="about-us"
+				class="flex flex-col justify-center min-h-screen px-5 py-10 lg:px-44 lg:py-20"
+			>
+				<div class="flex flex-col pb-10">
+					<h2 class="text-4xl font-bold text-custom-main">
+						About Us
+					</h2>
+					<span class="flex flex-col gap-5 mt-2 text-xl lg:mt-10">
+						<p>
+							Founded in 2008, FTTechnologies is a trusted
+							provider of cutting-edge electronic payment
+							solutions for financial institutions, payment
+							facilitators, and networks worldwide. With over 15
+							years of industry expertise, we deliver secure,
+							agile, and scalable systems that meet the highest
+							international standards, including PCI, Visa, and
+							MasterCard compliance.
+						</p>
+						<p>
+							Driven by a global vision, our team blends deep
+							domain knowledge with a culture of innovation,
+							collaboration, and adaptability. We design flexible
+							solutions that evolve with your business, empowering
+							you to navigate the dynamic digital payments
+							landscape with confidence.
+						</p>
+						<p>
+							At FT Technologies, we champion financial inclusion
+							and digital transformation. Our commitment to
+							continuous innovation helps clients grow, enhance
+							their brand value, and expand into global
+							markets—securely and seamlessly.
+						</p>
+					</span>
+				</div>
+
+				<div class="flex flex-col">
+					<h2 class="text-4xl font-bold">Highlights</h2>
+					<div class="grid gap-5 mt-10 lg:grid-cols-3">
+						<div class="text-xl">
+							<h2 class="font-bold">2008</h2>
 							<p>
-								With FT Technologies and Visa Acceptance
-								Solutions, your phone becomes a powerful payment
-								device you can carry anywhere.
-							</p>
-							<p>
-								With Tap To Phone now available through Visa’s
-								Card Present Connect, merchants can accept
-								contactless payments directly on any NFC-enabled
-								Android device — no extra hardware needed.
-							</p>
-							<p>
-								It’s fast. It’s secure. And it’s changing the
-								game for businesses everywhere.
+								Company funded. First IVR payment solution
+								delivered
 							</p>
 						</div>
-						<div class="flex justify-end mt-10">
-							<a
-								class="mt-5 text-sm text-white relative border rounded-lg max-w-max px-10 border-2 h-10 flex items-center border-white hover:bg-white duration-300 group/link"
-								href="javascript:void(0)"
-							>
-								<span
-									class="absolute left-1/2 min-w-max -translate-x-1/2 group-hover/link:opacity-0"
-									>Read full LinkedIn post</span
-								>
-								<span
-									class="opacity-0 text-black group-hover/link:opacity-100"
-									>Read full LinkedIn post</span
-								>
-							</a>
+						<div class="text-xl">
+							<h2 class="font-bold">2015</h2>
+							<p>
+								VisaNet Guatemala Processing Platform Migration.
+								(1MM Transactions per day)
+							</p>
+						</div>
+						<div class="text-xl">
+							<h2 class="font-bold">2019</h2>
+							<p>
+								First company that implement productive
+								TapToPhone with Visa in LATAM. (Banco Popular
+								Costa Rica)
+							</p>
+						</div>
+						<div class="text-xl">
+							<h2 class="font-bold">2020</h2>
+							<p>Visa Everywhere Initiative LAC</p>
+						</div>
+						<div class="text-xl">
+							<h2 class="font-bold">2022</h2>
+							<p>
+								Metro Panama (MTT) processing in the Cloud.
+								(Visa - Credicorp Bank)
+							</p>
+						</div>
+
+						<div class="text-xl">
+							<h2 class="font-bold">2022</h2>
+							<p>
+								First Global TapToPhone card present
+								implementation with PIN through Cybersource.
+								(Libélula Payfacs Bolivia)
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- End Basic Media -->
+			<!-- End Basic About -->
 
-		<!-- Start Basic Contact -->
-		<div class="min-h-screen py-20">
-			<div class="flex flex-col pb-10">
-				<h2 class="text-4xl text-custom-main px-44 font-bold">
-					Talk to Our Team
-				</h2>
-			</div>
-			<div class="flex px-44 gap-20">
-				<div class="w-full flex flex-col gap-5">
-					<div class="flex flex-col gap-1">
-						<label name="name" for="#name" class="text-xl"
-							>Full Name</label
-						>
-						<input
-							class="border h-12 rounded-lg border-gray-300 focus:outline-gray-300 px-3"
-							id="name"
-						/>
-					</div>
-					<div class="flex flex-col gap-1">
-						<label name="company" for="#company" class="text-xl"
-							>Company Name</label
-						>
-						<input
-							class="border h-12 rounded-lg border-gray-300 focus:outline-gray-300 px-3"
-							id="company"
-						/>
-					</div>
-					<div class="flex flex-col gap-1">
-						<label name="country" for="#country" class="text-xl"
-							>Business Country</label
-						>
-						<input
-							class="border h-12 rounded-lg border-gray-300 focus:outline-gray-300 px-3"
-							id="country"
-						/>
-					</div>
-					<div class="flex flex-col gap-1">
-						<label name="email" for="#email" class="text-xl"
-							>Email</label
-						>
-						<input
-							class="border h-12 rounded-lg border-gray-300 focus:outline-gray-300 px-3"
-							id="email"
-						/>
-					</div>
-					<div class="flex flex-col gap-1">
-						<label name="phone" for="#phone" class="text-xl"
-							>Telephone</label
-						>
-						<input
-							class="border h-12 rounded-lg border-gray-300 focus:outline-gray-300 px-3"
-							id="phone"
-						/>
-					</div>
-					<div class="flex flex-col gap-1">
-						<label name="subject" for="#subject" class="text-xl"
-							>Subject</label
-						>
-
-						<!-- Component: Rounded base basic select -->
-						<div class="relative">
-							<select
-								id="id-04"
-								name="id-04"
-								required
-								class="relative w-full w-full h-12 px-4 rounded-lg border-gray-300 text-sm transition-all bg-white border outline-none appearance-none focus-visible:outline-none peer autofill:bg-white focus:border-gray-500 focus:focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
+			<!-- Start Basic Media -->
+			<div
+				id="in-the-media"
+				class="flex flex-col justify-center min-h-screen px-5 py-10 lg:px-44 lg:py-20 bg-custom-bg-gray"
+			>
+				<div class="flex flex-col gap-5">
+					<h2 class="text-4xl font-bold text-white">In the Media</h2>
+					<div
+						class="grid grid-cols-1 gap-5 lg:mt-8 lg:gap-20 lg:grid-cols-3"
+					>
+						<div class="flex justify-center w-full col-span-1">
+							<img
+								src="/assets/media/fttandvisaacceptancesolutions@1x.png"
+								class="rounded-2xl"
+							/>
+						</div>
+						<div class="flex flex-col text-white lg:col-span-2">
+							<div class="flex flex-col gap-5 text-xl">
+								<p>
+									With FT Technologies and Visa Acceptance
+									Solutions, your phone becomes a powerful
+									payment device you can carry anywhere.
+								</p>
+								<p>
+									With Tap To Phone now available through
+									Visa’s Card Present Connect, merchants can
+									accept contactless payments directly on any
+									NFC-enabled Android device — no extra
+									hardware needed.
+								</p>
+								<p>
+									It’s fast. It’s secure. And it’s changing
+									the game for businesses everywhere.
+								</p>
+							</div>
+							<div
+								class="flex justify-center mt-10 lg:justify-end"
 							>
-								<option value="" disabled selected></option>
-								<option value="1">Request a demo</option>
-								<option value="2">
-									Sales Inquiry / Pricing
-								</option>
-								<option value="3">Technical Support</option>
-								<option value="4">
-									Partnership Opportunities
-								</option>
-								<option value="5">General Questions</option>
-							</select>
-							<!-- <label
+								<a
+									target="_blank"
+									class="relative flex items-center h-10 px-10 mt-5 text-sm text-white duration-300 border border-2 border-white rounded-lg max-w-max hover:text-black hover:bg-white group/link"
+									href="https://www.linkedin.com/posts/visa-acceptance-solutions_taptophone-smartpayments-visaacceptancesolutions-activity-7337888617538691072-8L8C?utm_source=share&utm_medium=member_desktop&rcm=ACoAAATjz1oBAVF2hNsXZKuaMFLcG_mvEpkZsNw"
+								>
+									<span class="min-w-max"
+										>Read full LinkedIn post</span
+									>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Basic Media -->
+
+			<!-- Start Basic Contact -->
+			<div
+				id="contact"
+				class="flex flex-col justify-center min-h-screen px-5 py-20 lg:px-44"
+			>
+				<div class="flex flex-col pb-10">
+					<h2 class="text-4xl font-bold text-custom-main">
+						Talk to Our Team
+					</h2>
+				</div>
+				<div class="flex flex-col gap-10 lg:gap-20 lg:flex-row">
+					<div class="flex flex-col w-full gap-5">
+						<div class="flex flex-col gap-1">
+							<label name="name" for="#name" class="text-xl"
+								>Full Name</label
+							>
+							<input
+								class="h-12 px-3 border border-gray-300 rounded-lg focus:outline-gray-300"
+								id="name"
+							/>
+						</div>
+						<div class="flex flex-col gap-1">
+							<label name="company" for="#company" class="text-xl"
+								>Company Name</label
+							>
+							<input
+								class="h-12 px-3 border border-gray-300 rounded-lg focus:outline-gray-300"
+								id="company"
+							/>
+						</div>
+						<div class="flex flex-col hidden gap-1">
+							<label name="country" for="#country" class="text-xl"
+								>Business Country</label
+							>
+							<input
+								class="h-12 px-3 border border-gray-300 rounded-lg focus:outline-gray-300"
+								id="country"
+							/>
+						</div>
+						<div class="flex flex-col gap-1">
+							<label name="email" for="#email" class="text-xl"
+								>Email</label
+							>
+							<input
+								class="h-12 px-3 border border-gray-300 rounded-lg focus:outline-gray-300"
+								id="email"
+							/>
+						</div>
+						<div class="flex flex-col gap-1">
+							<label name="phone" for="#phone" class="text-xl"
+								>Telephone</label
+							>
+							<input
+								class="h-12 px-3 border border-gray-300 rounded-lg focus:outline-gray-300"
+								id="phone"
+							/>
+						</div>
+						<div class="flex flex-col gap-1">
+							<label name="subject" for="#subject" class="text-xl"
+								>Subject</label
+							>
+
+							<!-- Component: Rounded base basic select -->
+							<div class="relative">
+								<select
+									id="id-04"
+									name="id-04"
+									required
+									class="relative w-full h-12 px-4 text-sm transition-all bg-white border border-gray-300 rounded-lg outline-none appearance-none focus-visible:outline-none peer autofill:bg-white focus:border-gray-500 focus:focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
+								>
+									<option value="" disabled selected></option>
+									<option value="1">Request a demo</option>
+									<option value="2">
+										Sales Inquiry / Pricing
+									</option>
+									<option value="3">Technical Support</option>
+									<option value="4">
+										Partnership Opportunities
+									</option>
+									<option value="5">General Questions</option>
+								</select>
+								<!-- <label
 								for="id-04"
 								class="pointer-events-none absolute top-3.5 left-2 z-[1] px-2 text-sm transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:transition-all peer-valid:-top-2 peer-valid:text-xs peer-focus:-top-2 peer-focus:text-xs peer-focus:text-gray-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent"
 							>
 								Choose Subject
 							</label> -->
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="pointer-events-none absolute top-3.5 right-2 h-5 w-5 fill-slate-400 transition-all peer-focus:fill-gray-500 peer-disabled:cursor-not-allowed"
-								viewBox="0 0 20 20"
-								fill="currentColor"
-								aria-labelledby="title-04 description-04"
-								role="graphics-symbol"
-							>
-								<title id="title-04">Arrow Icon</title>
-								<desc id="description-04">
-									Arrow icon of the select list.
-								</desc>
-								<path
-									fill-rule="evenodd"
-									d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-									clip-rule="evenodd"
-								/>
-							</svg>
-						</div>
-						<!-- End Rounded base basic select -->
-						<!-- <select
-							class="border h-12 rounded-lg border-gray-300 focus:outline-gray-300 px-3"
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="pointer-events-none absolute top-3.5 right-2 h-5 w-5 fill-slate-400 transition-all peer-focus:fill-gray-500 peer-disabled:cursor-not-allowed"
+									viewBox="0 0 20 20"
+									fill="currentColor"
+									aria-labelledby="title-04 description-04"
+									role="graphics-symbol"
+								>
+									<title id="title-04">Arrow Icon</title>
+									<desc id="description-04">
+										Arrow icon of the select list.
+									</desc>
+									<path
+										fill-rule="evenodd"
+										d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+										clip-rule="evenodd"
+									/>
+								</svg>
+							</div>
+							<!-- End Rounded base basic select -->
+							<!-- <select
+							class="h-12 px-3 border border-gray-300 rounded-lg focus:outline-gray-300"
 							name="subject"
 							id="subject"
 							placeholder="Choose Subject"
 						>
 							<option>Choose Subject</option>
 						</select> -->
-					</div>
-					<div class="flex flex-col gap-1">
-						<label name="message" for="#message" class="text-xl"
-							>Message</label
-						>
-						<textarea
-							class="border h-[8lh] rounded-lg border-gray-300 focus:outline-gray-300 p-3"
-							id="message"
-						></textarea>
-					</div>
+						</div>
+						<div class="flex flex-col gap-1">
+							<label name="message" for="#message" class="text-xl"
+								>Message</label
+							>
+							<textarea
+								class="border h-[8lh] rounded-lg border-gray-300 focus:outline-gray-300 p-3"
+								id="message"
+							></textarea>
+						</div>
 
-					<div class="flex w-full justify-end -mt-5">
-						<a
-							class="mt-5 text-base bg-custom-main text-white relative border rounded-lg max-w-max px-10 border-2 h-10 flex items-center border-white hover:bg-custom-main/70 duration-300 group/link"
-							href="javascript:void(0)"
-						>
-							<span class="">Send Message</span>
-						</a>
+						<div class="flex justify-end w-full -mt-5">
+							<a
+								class="relative flex items-center h-10 px-10 mt-5 text-base text-white duration-300 border border-2 border-white rounded-lg bg-custom-main max-w-max hover:bg-custom-main/70 group/link"
+								href="javascript:void(0)"
+							>
+								<span class="">Send Message</span>
+							</a>
+						</div>
 					</div>
-				</div>
-				<div class="w-full flex flex-col justify-center">
-					<div class="text-custom-main">
-						<h2 class="font-bold text-3xl">Headquarters</h2>
-						<p class="text-xl">
-							Costa Rica, San José, Santa Ana Town Center, 2nd
-							floor
-						</p>
-						<img
-							src="/assets/media/screenshot-2025-09-18-at-12-46-49-pm@1x.png"
-							class="rounded-2xl mt-5"
-						/>
+					<div class="flex flex-col justify-center w-full">
+						<div class="text-custom-main">
+							<h2 class="text-3xl font-bold">Headquarters</h2>
+							<p class="text-xl">
+								Costa Rica, San José, Santa Ana Town Center, 2nd
+								floor
+							</p>
+							<img
+								src="/assets/media/screenshot-2025-09-18-at-12-46-49-pm@1x.png"
+								class="mt-5 rounded-lg lg:rounded-2xl"
+							/>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- End Basic Contact -->
+			<!-- End Basic Contact -->
 
-		<!-- Start Footer with logo and subfooter -->
-		<footer class="text-white">
-			<!-- Main footer -->
-			<div
-				class="pt-16 pb-12 text-sm border-t border-slate-200 bg-[#013DA5]"
-			>
-				<div class="container px-6 mx-auto">
-					<div
-						class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12"
-					>
+			<!-- Start Footer with logo and subfooter -->
+			<footer class="text-white">
+				<!-- Main footer -->
+				<div
+					class="pt-16 pb-12 text-sm border-t border-slate-200 bg-[#013DA5]"
+				>
+					<div class="container px-6 mx-auto">
 						<div
-							class="col-span-4 md:col-span-8 lg:col-span-8"
-							aria-labelledby="footer-header"
+							class="grid grid-cols-1 gap-6 md:grid-cols-8 lg:grid-cols-12"
 						>
-							<a
-								id="WindUI-5-logo"
-								aria-label="WindUI logo"
-								aria-current="page"
-								class="flex items-center gap-2 mb-6 text-base font-medium leading-6 whitespace-nowrap text-slate-700 focus:outline-none"
-								href="javascript:void(0)"
+							<div
+								class="col-span-1 md:col-span-8 lg:col-span-8"
+								aria-labelledby="footer-header"
 							>
-								<img src="/assets/logo/path-25-2@1x.png" />
-								<img src="/assets/logo/path-26-2@1x.png" />
-								<img src="/assets/logo/path-27-2@1x.png" />
-								<img src="/assets/logo/path-28-2@1x.png" />
-							</a>
-							<div class="text-3xl -mt-3 font-normal">
-								Innovating the way we pay
+								<a
+									aria-current="page"
+									class="flex items-center gap-2 mb-6 text-base font-medium leading-6 select-none whitespace-nowrap text-slate-700 focus:outline-none"
+									href="/"
+								>
+									<img
+										class="h-12 lg:h-auto"
+										src="/assets/logo/path-25-2@1x.png"
+									/>
+									<img
+										class="h-12 lg:h-auto"
+										src="/assets/logo/path-26-2@1x.png"
+									/>
+									<img
+										class="h-12 lg:h-auto"
+										src="/assets/logo/path-27-2@1x.png"
+									/>
+									<img
+										class="h-12 lg:h-auto"
+										src="/assets/logo/path-28-2@1x.png"
+									/>
+								</a>
+								<div
+									class="-mt-3 text-2xl font-normal lg:text-3xl"
+								>
+									Innovating the way we pay
+								</div>
 							</div>
-						</div>
 
-						<nav
-							class="col-span-2 md:col-span-4 lg:col-span-2"
-							aria-labelledby="footer-about-5-logo"
-						>
-							<h3
-								class="mb-6 text-3xl font-bold"
-								id="footer-about-5-logo"
+							<nav
+								class="col-span-2 lg:col-span-2"
+								aria-labelledby="footer-about-5-logo"
 							>
-								Links
-							</h3>
-							<ul class="text-lg">
+								<h3
+									class="mb-6 text-3xl font-bold"
+									id="footer-about-5-logo"
+								>
+									Links
+								</h3>
+								<ul class="text-lg">
+									<li class="mb-2 leading-6">
+										<a
+											href="javascript:void(0)"
+											class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
+										>
+											Our Solutions
+										</a>
+									</li>
+									<li class="mb-2 leading-6">
+										<a
+											href="javascript:void(0)"
+											class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
+										>
+											Partners and Clients
+										</a>
+									</li>
+									<li class="mb-2 leading-6">
+										<a
+											href="javascript:void(0)"
+											class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
+										>
+											Certifications
+										</a>
+									</li>
+									<li class="mb-2 leading-6">
+										<a
+											href="javascript:void(0)"
+											class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
+										>
+											About Us
+										</a>
+									</li>
+									<li class="mb-2 leading-6">
+										<a
+											href="javascript:void(0)"
+											class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
+										>
+											In the Media
+										</a>
+									</li>
+									<li class="mb-2 leading-6">
+										<a
+											href="/#contact"
+											class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
+										>
+											Contact Us
+										</a>
+									</li>
+								</ul>
+							</nav>
+							<nav
+								class="col-span-2 md:col-span-4 lg:col-span-2"
+								aria-labelledby="footer-get-in-touch-5-logo"
+							>
+								<h3
+									class="mb-6 text-3xl font-bold"
+									id="footer-about-5-logo"
+								>
+									Contact
+								</h3>
+								<p class="text-xl">
+									<strong>Headquarters:</strong> <br />
+									Costa Rica, San José, Santa Ana Town Center,
+									2nd floor contactenos@fttecnologias.com
+								</p>
+
+								<div class="flex gap-5 mt-5 lg:mt-2">
+									<a
+										target="_blank"
+										href="https://www.linkedin.com/company/ftt-technologies"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="duration-300 opacity-75 cursor-pointer size-14 hover:scale-110 hover:opacity-100"
+											viewBox="0 0 24 24"
+										>
+											<path
+												fill="currentColor"
+												d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"
+											/>
+										</svg>
+									</a>
+									<a
+										target="_blank"
+										href="https://wa.me/+50671973960"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="duration-300 opacity-75 cursor-pointer size-14 hover:scale-110 hover:opacity-100"
+											viewBox="0 0 24 24"
+										>
+											<path
+												fill="currentColor"
+												d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.39-4.19-1.15l-.3-.17l-3.12.82l.83-3.04l-.2-.32a8.2 8.2 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24M8.53 7.33c-.16 0-.43.06-.66.31c-.22.25-.87.86-.87 2.07c0 1.22.89 2.39 1 2.56c.14.17 1.76 2.67 4.25 3.73c.59.27 1.05.42 1.41.53c.59.19 1.13.16 1.56.1c.48-.07 1.46-.6 1.67-1.18s.21-1.07.15-1.18c-.07-.1-.23-.16-.48-.27c-.25-.14-1.47-.74-1.69-.82c-.23-.08-.37-.12-.56.12c-.16.25-.64.81-.78.97c-.15.17-.29.19-.53.07c-.26-.13-1.06-.39-2-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.12-.24-.01-.39.11-.5c.11-.11.27-.29.37-.44c.13-.14.17-.25.25-.41c.08-.17.04-.31-.02-.43c-.06-.11-.56-1.35-.77-1.84c-.2-.48-.4-.42-.56-.43c-.14 0-.3-.01-.47-.01"
+											/>
+										</svg>
+									</a>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<!-- Sub Footer -->
+				<div class="pt-2 border-t bg-custom-main border-gray-200/10">
+					<div class="container px-6 mx-auto">
+						<div
+							class="flex flex-col pb-3 lg:pb-0 lg:gap-5 lg:flex-row"
+						>
+							<ul
+								class="flex w-full gap-5 lg:justify-center lg:w-auto"
+							>
 								<li class="mb-2 leading-6">
 									<a
-										href="javascript:void(0)"
-										class="transition-colors duration-300 hover:text-custom-main focus:text-custom-main"
+										href="/privacy"
+										class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
 									>
-										Our Solutions
+										Privacy
 									</a>
 								</li>
 								<li class="mb-2 leading-6">
 									<a
 										href="javascript:void(0)"
-										class="transition-colors duration-300 hover:text-custom-main focus:text-custom-main"
+										class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
 									>
-										Partners and Clients
+										Cookies
 									</a>
 								</li>
 								<li class="mb-2 leading-6">
 									<a
-										href="javascript:void(0)"
-										class="transition-colors duration-300 hover:text-custom-main focus:text-custom-main"
+										href="/disclaimer"
+										class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
 									>
-										Certifications
-									</a>
-								</li>
-								<li class="mb-2 leading-6">
-									<a
-										href="javascript:void(0)"
-										class="transition-colors duration-300 hover:text-custom-main focus:text-custom-main"
-									>
-										About Us
-									</a>
-								</li>
-								<li class="mb-2 leading-6">
-									<a
-										href="javascript:void(0)"
-										class="transition-colors duration-300 hover:text-custom-main focus:text-custom-main"
-									>
-										In the Media
-									</a>
-								</li>
-								<li class="mb-2 leading-6">
-									<a
-										href="javascript:void(0)"
-										class="transition-colors duration-300 hover:text-custom-main focus:text-custom-main"
-									>
-										Contact Us
+										Disclaimer
 									</a>
 								</li>
 							</ul>
-						</nav>
-						<nav
-							class="col-span-2 md:col-span-4 lg:col-span-2"
-							aria-labelledby="footer-get-in-touch-5-logo"
-						>
-							<h3
-								class="mb-6 text-3xl font-bold"
-								id="footer-about-5-logo"
+							<div
+								class="flex w-full lg:justify-center lg:w-auto"
 							>
-								Contact
-							</h3>
-							<p class="text-xl">
-								Headquarters: Costa Rica, San José, Santa Ana
-								Town Center, 2nd floor
-								contactenos@fttecnologias.com
-							</p>
-
-							<div class="mt-2 flex gap-5">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="size-14"
-									viewBox="0 0 24 24"
-								>
-									<path
-										fill="currentColor"
-										d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"
-									/>
-								</svg>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="size-14"
-									viewBox="0 0 24 24"
-								>
-									<path
-										fill="currentColor"
-										d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.39-4.19-1.15l-.3-.17l-3.12.82l.83-3.04l-.2-.32a8.2 8.2 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24M8.53 7.33c-.16 0-.43.06-.66.31c-.22.25-.87.86-.87 2.07c0 1.22.89 2.39 1 2.56c.14.17 1.76 2.67 4.25 3.73c.59.27 1.05.42 1.41.53c.59.19 1.13.16 1.56.1c.48-.07 1.46-.6 1.67-1.18s.21-1.07.15-1.18c-.07-.1-.23-.16-.48-.27c-.25-.14-1.47-.74-1.69-.82c-.23-.08-.37-.12-.56.12c-.16.25-.64.81-.78.97c-.15.17-.29.19-.53.07c-.26-.13-1.06-.39-2-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.12-.24-.01-.39.11-.5c.11-.11.27-.29.37-.44c.13-.14.17-.25.25-.41c.08-.17.04-.31-.02-.43c-.06-.11-.56-1.35-.77-1.84c-.2-.48-.4-.42-.56-.43c-.14 0-.3-.01-.47-.01"
-									/>
-								</svg>
+								@ 2025 FT Technologies
 							</div>
-						</nav>
+						</div>
 					</div>
 				</div>
-			</div>
-			<!-- Sub Footer -->
-			<div class="py-4 bg-custom-main">
-				<div class="container px-6 mx-auto">
-					<div class="flex gap-5">
-						<ul class="flex gap-5">
-							<li class="mb-2 leading-6">
-								<a
-									href="javascript:void(0)"
-									class="transition-colors duration-300 opacity-75 hover:opacity-100 duration-300 focus:text-custom-main"
-								>
-									Privacy
-								</a>
-							</li>
-							<li class="mb-2 leading-6">
-								<a
-									href="javascript:void(0)"
-									class="transition-colors duration-300 opacity-75 hover:opacity-100 duration-300 focus:text-custom-main"
-								>
-									Cookies
-								</a>
-							</li>
-							<li class="mb-2 leading-6">
-								<a
-									href="javascript:void(0)"
-									class="transition-colors duration-300 opacity-75 hover:opacity-100 duration-300 focus:text-custom-main"
-								>
-									Disclaimer
-								</a>
-							</li>
-						</ul>
-						@ 2025 FT Technologies
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- End Footer with logo and subfooter -->
+			</footer>
+			<!-- End Footer with logo and subfooter -->
+		</div>
+		<!-- Start FAB -->
+		<button
+			onclick='window.scrollTo({top: 0, behavior: "smooth"});'
+			id="scrollToTopBtn"
+			class="fixed w-10 duration-500 border-2 border-white rounded-full shadow-xl cursor-pointer active:scale-95 hover:scale-110 bg-custom-main shadow-gray-700 aspect-square bottom-5 right-5"
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="w-full text-white"
+				viewBox="0 0 24 24"
+			>
+				<path
+					fill="currentColor"
+					d="M12 22A10 10 0 0 1 2 12A10 10 0 0 1 12 2a10 10 0 0 1 10 10a10 10 0 0 1-10 10m0-15l-5 5h3v4h4v-4h3z"
+				/>
+			</svg>
+		</button>
+		<!-- End FAB -->
 	</body>
+
+	<script>
+		//Scroll to top behavior
+		const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+		window.addEventListener('scroll', () => {
+			if (window.scrollY > 1000) {
+				// Change 1000 to the desired scroll position
+				scrollToTopBtn.classList.remove('opacity-0');
+			} else {
+				scrollToTopBtn.classList.add('opacity-0');
+			}
+		});
+	</script>
 </html>
