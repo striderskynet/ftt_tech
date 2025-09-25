@@ -42,16 +42,6 @@
 						class="flex items-center font-bold gap-0.5 whitespace-nowrap lg:flex-1"
 						href="/"
 					>
-						<!-- <svg
-							xmlns="http://www.w3.org/2000/svg"
-							class="mt-2 text-custom-main size-16"
-							viewBox="0 0 56 56"
-						>
-							<path
-								fill="currentColor"
-								d="M13.785 49.574h28.453c4.899 0 7.336-2.437 7.336-7.265V13.69c0-4.828-2.437-7.265-7.336-7.265H13.785c-4.875 0-7.36 2.414-7.36 7.265v28.62c0 4.851 2.485 7.265 7.36 7.265m.07-3.773c-2.343 0-3.656-1.242-3.656-3.68V13.88c0-2.438 1.313-3.68 3.656-3.68h28.313c2.32 0 3.633 1.242 3.633 3.68v28.24c0 2.438-1.313 3.68-3.633 3.68Zm25.196-25.125c0-.938-.657-1.594-1.57-1.594H25.34l-3.586.164l2.601-2.18l1.828-1.593c.305-.258.47-.657.47-1.125c0-.868-.68-1.524-1.548-1.524c-.445 0-.82.14-1.101.422l-6.399 6.094c-.445.422-.609.867-.609 1.336s.188.984.61 1.383l6.398 6.046a1.52 1.52 0 0 0 1.101.446a1.53 1.53 0 0 0 1.547-1.547c0-.469-.164-.89-.469-1.149l-1.828-1.546l-2.625-2.204l3.61.165h12.14c.914 0 1.57-.68 1.57-1.594m0 14.344c0-.446-.164-.891-.61-1.313l-6.398-6.117c-.281-.281-.656-.399-1.102-.399c-.867 0-1.547.657-1.547 1.524c0 .469.165.867.47 1.125l1.827 1.594l2.602 2.156l-3.586-.14h-12.14c-.915 0-1.571.655-1.571 1.57c0 .937.656 1.593 1.57 1.593h12.141l3.633-.14l-2.649 2.203l-1.828 1.547c-.305.234-.469.68-.469 1.125c0 .867.68 1.547 1.547 1.547c.446 0 .82-.141 1.102-.422l6.398-6.07c.422-.4.61-.891.61-1.383"
-							/>
-						</svg> -->
 						<img
 							src="/assets/logo/ftt_logo_full.svg"
 							class="hidden h-16 lg:flex"
@@ -60,25 +50,10 @@
 							src="/assets/logo/ftt_logo_min.svg"
 							class="flex h-8 image-cover lg:hidden"
 						/>
-						<!-- <span class="flex gap-1 ml-2 text-custom-main">
-							<img
-								src="/assets/logo/logo_f_letter.svg"
-								class="w-6 mt-2 lg:w-10"
-							/>
-							<img
-								src="/assets/logo/logo_t_letter.svg"
-								class="w-10 mt-2"
-							/>
-							<img
-								src="/assets/logo/logo_t_letter_gray.svg"
-								class="w-10 mt-2 -me-1"
-							/>
-						</span>
-						<span class="mt-2">echnologies</span> -->
 					</a>
 					<!-- Mobile trigger -->
 					<button
-						class="relative self-center order-10 visible block w-10 h-10 opacity-100 lg:hidden focus:!bg-custom-main focus:text-white duration-300 rounded-lg"
+						class="peer relative self-center order-10 visible block w-10 h-10 opacity-100 lg:hidden focus:!bg-custom-main focus:text-white duration-300 rounded-lg"
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
@@ -103,7 +78,7 @@
 					<ul
 						role="menubar"
 						aria-label="Select page"
-						class="invisible text-lg text-custom-main lg:pb-5 lg:px-4 font-normal absolute top-0 left-0 z-[-1] ml-auto lg:gap-4 h-screen w-full justify-center overflow-hidden overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-28 font-medium opacity-0 transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0 lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0 lg:pt-0 lg:opacity-100"
+						class="peer-focus:opacity-100 opacity-0 text-lg text-custom-main lg:pb-5 lg:px-4 font-normal absolute top-0 left-0 z-[-1] ml-auto lg:gap-4 h-screen w-full justify-center overflow-hidden overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-28 font-medium transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0 lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0 lg:pt-0 lg:opacity-100"
 					>
 						<li role="none" class="flex items-stretch">
 							<a
@@ -172,9 +147,7 @@
 		<!-- End Basic Navbar-->
 
 		<!-- Start Basic Hero -->
-		<div
-			class="min-h-screen lg:min-h-[80vh] flex flex-col w-full lg:p-5 pt-0"
-		>
+		<div class="flex flex-col w-full h-[90vh] pt-0 lg:p-5">
 			<div class="flex flex-col-reverse mt-20 lg:flex-row lg:mt-16">
 				<div
 					class="flex items-end justify-center p-5 mt-5 lg:mt-0 lg:w-1/2"
@@ -203,7 +176,20 @@
 					/>
 				</div>
 			</div>
-			<div class="px-44"></div>
+			<div
+				class="flex items-end justify-center h-full pb-10 lg:opacity-0"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="size-20 animate-pulse opacity-20"
+					viewBox="0 0 24 24"
+				>
+					<path
+						fill="currentColor"
+						d="M16.59 5.59L18 7l-6 6l-6-6l1.41-1.41L12 10.17zm0 6L18 13l-6 6l-6-6l1.41-1.41L12 16.17z"
+					/>
+				</svg>
+			</div>
 		</div>
 		<!-- End Basic Hero -->
 
@@ -219,10 +205,10 @@
 				</h2>
 
 				<div
-					class="grid w-full grid-cols-1 gap-16 mt-12 text-center lg:grid-cols-4 lg:mt-28 lg:px-36"
+					class="grid w-full grid-cols-1 gap-10 mt-12 text-center lg:gap-16 lg:grid-cols-4 lg:mt-28 lg:px-36"
 				>
 					<div
-						class="flex flex-col justify-center items-center gap-5 w-full lg:aspect-[1/1.2]"
+						class="flex flex-col justify-center items-center gap-2 lg:gap-5 w-full lg:aspect-[1/1.2]"
 					>
 						<img
 							src="/assets/icons/path-83@1x.png"
@@ -272,7 +258,7 @@
 			<!-- Start Basic Solutions -->
 			<div
 				id="our-solutions"
-				class="flex flex-col justify-center min-h-screen gap-10 py-20 px-44 bg-custom-bg-gray"
+				class="flex flex-col justify-center min-h-screen gap-10 px-5 py-10 lg:py-20 lg:px-44 bg-custom-bg-gray"
 			>
 				<div class="flex flex-col">
 					<h2 class="text-4xl font-bold text-white">Our Solutions</h2>
@@ -284,7 +270,7 @@
 				</div>
 				<div class="flex flex-col text-white">
 					<h2 class="text-3xl font-bold">Payment Solutions</h2>
-					<div class="grid grid-cols-2 mt-8">
+					<div class="grid gap-10 mt-8 lg:gap-0 lg:grid-cols-2">
 						<div class="flex flex-col">
 							<h2 class="text-2xl font-bold">Card Present</h2>
 							<div
@@ -346,17 +332,10 @@
 								<div class="flex items-center gap-5"></div>
 							</div>
 							<a
-								class="relative flex items-center px-8 mt-5 text-sm duration-300 border border-2 border-white rounded-lg max-w-max h-14 hover:bg-white group/link"
-								href="javascript:void(0)"
+								class="relative flex items-center h-12 px-8 text-sm duration-300 border border-2 border-white rounded-lg max-w-max hover:bg-white group/link"
+								href="/#contact"
 							>
-								<span
-									class="absolute -translate-x-1/2 left-1/2 group-hover/link:opacity-0"
-									>Request a demo</span
-								>
-								<span
-									class="text-black opacity-0 group-hover/link:opacity-100"
-									>I'm interested in a demo</span
-								>
+								<span class="">Request a demo</span>
 							</a>
 						</div>
 						<div class="flex flex-col">
@@ -431,27 +410,20 @@
 								</div>
 							</div>
 							<a
-								class="relative flex items-center px-8 mt-5 text-sm duration-300 border border-2 border-white rounded-lg max-w-max h-14 hover:bg-white group/link"
-								href="javascript:void(0)"
+								class="relative flex items-center h-12 px-8 text-sm duration-300 border border-2 border-white rounded-lg max-w-max hover:bg-white group/link"
+								href="/#contact"
 							>
-								<span
-									class="absolute -translate-x-1/2 left-1/2 group-hover/link:opacity-0"
-									>Request a demo</span
-								>
-								<span
-									class="text-black opacity-0 group-hover/link:opacity-100"
-									>I'm interested in a demo</span
-								>
+								<span class="">Request a demo</span>
 							</a>
 						</div>
 					</div>
 				</div>
 				<div class="flex flex-col text-white">
 					<h2 class="text-3xl font-bold">Platform Solutions</h2>
-					<div class="grid grid-cols-2 gap-10 mt-8">
-						<div class="grid grid-cols-2">
+					<div class="grid gap-10 mt-8 lg:grid-cols-2">
+						<div class="grid lg:grid-cols-2">
 							<img src="/assets/media/image-1@1x.png" />
-							<div class="flex flex-col px-5">
+							<div class="flex flex-col lg:px-5">
 								<div class="text-2xl font-bold">
 									Processing, Clearing Settlement capabilities
 								</div>
@@ -461,24 +433,17 @@
 								</div>
 
 								<a
-									class="relative flex items-center h-10 px-8 mt-5 text-sm duration-300 border border-2 border-white rounded-lg max-w-max hover:bg-white group/link"
-									href="javascript:void(0)"
+									class="relative flex items-center h-12 px-8 mt-5 text-sm duration-300 border border-2 border-white rounded-lg max-w-max hover:bg-white group/link"
+									href="/#contact"
 								>
-									<span
-										class="absolute -translate-x-1/2 left-1/2 group-hover/link:opacity-0"
-										>Request a demo</span
-									>
-									<span
-										class="text-black opacity-0 group-hover/link:opacity-100"
-										>I'm interested in a demo</span
-									>
+									<span class="">Request a demo</span>
 								</a>
 							</div>
 						</div>
 
-						<div class="grid grid-cols-2">
+						<div class="grid lg:grid-cols-2">
 							<img src="/assets/media/image-1@1x.png" />
-							<div class="flex flex-col px-5">
+							<div class="flex flex-col">
 								<div class="text-2xl font-bold">
 									Reporting and Onboarding Services
 								</div>
@@ -488,17 +453,10 @@
 								</div>
 
 								<a
-									class="relative flex items-center h-10 px-8 mt-5 text-sm duration-300 border border-2 border-white rounded-lg max-w-max hover:bg-white group/link"
-									href="javascript:void(0)"
+									class="relative flex items-center h-12 px-8 mt-5 text-sm duration-300 border border-2 border-white rounded-lg max-w-max hover:bg-white group/link"
+									href="/#contact"
 								>
-									<span
-										class="absolute -translate-x-1/2 left-1/2 group-hover/link:opacity-0"
-										>Request a demo</span
-									>
-									<span
-										class="text-black opacity-0 group-hover/link:opacity-100"
-										>I'm interested in a demo</span
-									>
+									<span class="">Request a demo</span>
 								</a>
 							</div>
 						</div>
@@ -701,12 +659,12 @@
 				id="certifications"
 				class="flex flex-col justify-center min-h-screen px-5 py-10 lg:px-44 lg:py-20 bg-custom-bg-gray"
 			>
-				<div class="flex flex-col pb-5">
+				<div class="flex flex-col">
 					<h2 class="text-4xl font-bold text-white">
 						Certifications
 					</h2>
 					<div
-						class="grid grid-cols-1 gap-10 mt-8 lg:gap-20 lg:grid-cols-3"
+						class="grid grid-cols-1 gap-5 mt-5 lg:gap-20 lg:grid-cols-3"
 					>
 						<img
 							src="/assets/media/pci-dss@1x.png"
@@ -1084,7 +1042,7 @@
 								<ul class="text-lg">
 									<li class="mb-2 leading-6">
 										<a
-											href="javascript:void(0)"
+											href="/#our-solutions"
 											class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
 										>
 											Our Solutions
@@ -1092,7 +1050,7 @@
 									</li>
 									<li class="mb-2 leading-6">
 										<a
-											href="javascript:void(0)"
+											href="/#partners-and-clients"
 											class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
 										>
 											Partners and Clients
@@ -1100,7 +1058,7 @@
 									</li>
 									<li class="mb-2 leading-6">
 										<a
-											href="javascript:void(0)"
+											href="/#certifications"
 											class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
 										>
 											Certifications
@@ -1108,7 +1066,7 @@
 									</li>
 									<li class="mb-2 leading-6">
 										<a
-											href="javascript:void(0)"
+											href="/#about-us"
 											class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
 										>
 											About Us
@@ -1116,7 +1074,7 @@
 									</li>
 									<li class="mb-2 leading-6">
 										<a
-											href="javascript:void(0)"
+											href="/#in-the-media"
 											class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
 										>
 											In the Media
@@ -1233,7 +1191,8 @@
 		<button
 			onclick='window.scrollTo({top: 0, behavior: "smooth"});'
 			id="scrollToTopBtn"
-			class="fixed w-10 duration-500 border-2 border-white rounded-full shadow-xl cursor-pointer active:scale-95 hover:scale-110 bg-custom-main shadow-gray-700 aspect-square bottom-5 right-5"
+			alt="Scroll to Top"
+			class="fixed w-12 duration-500 border-2 border-white rounded-full shadow-xl cursor-pointer active:scale-95 hover:scale-110 bg-custom-main shadow-gray-700 aspect-square bottom-5 right-5"
 		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
