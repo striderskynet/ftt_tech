@@ -21,6 +21,11 @@
 				--color-custom-bg-gray: #252526;
 			}
 		</style>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css"
+		/>
+
 		<title>Innovating the way we pay | FTTechnologies</title>
 
 		<meta
@@ -70,6 +75,7 @@
 		/>
 	</head>
 	<body>
+		<script type="module" src="scripts/cookieconsent-config.js"></script>
 		<!-- Component: Basic Navbar -->
 		<header
 			class="relative z-20 w-full bir lg:pt-10 bg-white/90 shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden"
@@ -1224,15 +1230,16 @@
 								<li class="mb-2 leading-6">
 									<a
 										href="/privacy"
-										class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
+										class="transition-colors duration-300 opacity-75 hover:opacity-100"
 									>
 										Privacy
 									</a>
 								</li>
 								<li class="mb-2 leading-6">
 									<a
+										onclick="CookieConsent.show(true)"
 										href="javascript:void(0)"
-										class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
+										class="transition-colors duration-300 opacity-75 hover:opacity-100"
 									>
 										Cookies
 									</a>
@@ -1240,7 +1247,7 @@
 								<li class="mb-2 leading-6">
 									<a
 										href="/disclaimer"
-										class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
+										class="transition-colors duration-300 opacity-75 hover:opacity-100"
 									>
 										Disclaimer
 									</a>
