@@ -10,11 +10,11 @@ CookieConsent.run({
     // revision: 0,
 
     cookie: {
-        name: 'cc_cookie',
-        // domain: location.hostname,
-        // path: '/',
+        name: 'ftt_cookie',
+        domain: location.hostname,
+        path: '/',
         // sameSite: "Lax",
-        // expiresAfterDays: 182,
+        expiresAfterDays: 182,
     },
 
     // https://cookieconsent.orestbida.com/reference/configuration-reference.html#guioptions
@@ -67,9 +67,9 @@ CookieConsent.run({
                     {
                         name: /^_ga/,   // regex: match all cookies starting with '_ga'
                     },
-                    {
-                        name: '_gid',   // string: exact cookie name
-                    }
+                    // {
+                    //     name: '_gid',   // string: exact cookie name
+                    // }
                 ]
             },
 
@@ -80,14 +80,14 @@ CookieConsent.run({
                     onAccept: () => { },
                     onReject: () => { }
                 },
-                youtube: {
-                    label: 'Youtube Embed',
-                    onAccept: () => { },
-                    onReject: () => { }
-                },
+                // youtube: {
+                //     label: 'Youtube Embed',
+                //     onAccept: () => { },
+                //     onReject: () => { }
+                // },
             }
         },
-        ads: {}
+        // ads: {}
     },
 
     language: {
@@ -102,8 +102,9 @@ CookieConsent.run({
                     showPreferencesBtn: 'Manage Individual preferences',
                     // closeIconLabel: 'Reject all and close modal',
                     footer: `
-                        <a href="#path-to-impressum.html" target="_blank">Impressum</a>
-                        <a href="#path-to-privacy-policy.html" target="_blank">Privacy Policy</a>
+                      
+                        <a href="/privacy" target="_blank">Privacy Policy</a>
+                        <a href="/disclaimer" target="_blank">Disclaimer</a>
                     `,
                 },
                 preferencesModal: {
@@ -140,21 +141,21 @@ CookieConsent.run({
                                     {
                                         name: '_ga',
                                         domain: location.hostname,
-                                        desc: 'Description 1',
+                                        desc: 'Google Analytics cookie used to distinguish users.',
                                     },
-                                    {
-                                        name: '_gid',
-                                        domain: location.hostname,
-                                        desc: 'Description 2',
-                                    }
+                                    // {
+                                    //     name: '_gid',
+                                    //     domain: location.hostname,
+                                    //     desc: 'Description 2',
+                                    // }
                                 ]
                             }
                         },
-                        {
-                            title: 'Targeting and Advertising',
-                            description: 'These cookies are used to make advertising messages more relevant to you and your interests. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.',
-                            linkedCategory: 'ads',
-                        },
+                        // {
+                        //     title: 'Targeting and Advertising',
+                        //     description: 'These cookies are used to make advertising messages more relevant to you and your interests. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.',
+                        //     linkedCategory: 'ads',
+                        // },
                         {
                             title: 'More information',
                             description: 'For any queries in relation to my policy on cookies and your choices, please <a href="#contact-page">contact us</a>'
