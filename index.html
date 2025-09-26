@@ -92,9 +92,9 @@
 		<script type="module" src="scripts/cookieconsent-config.js"></script>
 		<!-- Component: Basic Navbar -->
 		<header
-			class="relative z-20 w-full bir lg:pt-10 bg-white/90 shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden"
+			class="relative z-20 w-full bir xl:pt-10 bg-white/90 shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 xl:border-slate-200 xl:backdrop-blur-sm xl:after:hidden"
 		>
-			<div class="relative max-w-full px-5 mx-auto lg:ps-36 lg:pe-32">
+			<div class="relative max-w-full px-5 mx-auto xl:ps-36 xl:pe-32">
 				<nav
 					aria-label="main navigation"
 					class="flex h-[5.5rem] items-stretch justify-between text-custom-secondary"
@@ -103,24 +103,24 @@
 					<!-- Brand logo -->
 					<a
 						aria-current="page"
-						class="flex items-center font-bold gap-0.5 whitespace-nowrap lg:flex-1"
+						class="flex items-center font-bold gap-0.5 whitespace-nowrap xl:flex-1"
 						href="/"
 					>
 						<img
 							alt="FTTechnologies Full"
 							src="/assets/logo/ftt_logo_full.svg"
-							class="hidden h-16 lg:flex"
+							class="hidden h-16 xl:flex"
 						/>
 						<img
 							alt="FTTechnologies Min"
 							src="/assets/logo/ftt_logo_min.svg"
-							class="flex h-8 image-cover lg:hidden"
+							class="flex h-8 image-cover xl:hidden"
 						/>
 						<span class="sr-only">FTTechnologies Logo</span>
 					</a>
 					<!-- Mobile trigger -->
 					<button
-						class="peer relative self-center order-10 visible block w-10 h-10 opacity-100 lg:hidden focus:!bg-custom-main focus:text-white duration-300 rounded-lg"
+						class="peer group/menu relative self-center order-10 visible block w-10 h-10 opacity-100 xl:hidden focus:!bg-custom-main focus:text-white duration-300 rounded-lg"
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
@@ -129,15 +129,15 @@
 						>
 							<span
 								aria-hidden="true"
-								class="absolute block h-0.5 w-9/12 -translate-y-2 transform rounded-full bg-slate-900 transition-all duration-300"
+								class="absolute block h-0.5 w-9/12 -translate-y-2 transform group-focus/menu:bg-white rounded-full bg-slate-900 transition-all duration-300"
 							></span>
 							<span
 								aria-hidden="true"
-								class="absolute block h-0.5 w-6 transform rounded-full bg-slate-900 transition duration-300"
+								class="absolute block h-0.5 w-6 transform rounded-full group-focus/menu:bg-white bg-slate-900 transition duration-300"
 							></span>
 							<span
 								aria-hidden="true"
-								class="absolute block h-0.5 w-1/2 origin-top-left translate-y-2 transform rounded-full bg-slate-900 transition-all duration-300"
+								class="absolute block h-0.5 w-1/2 origin-top-left translate-y-2 transform rounded-full group-focus/menu:bg-white bg-slate-900 transition-all duration-300"
 							></span>
 						</div>
 					</button>
@@ -145,13 +145,13 @@
 					<ul
 						role="menubar"
 						aria-label="Select page"
-						class="peer-focus:opacity-100 opacity-0 text-lg text-custom-main lg:pb-5 lg:px-4 font-normal absolute top-0 left-0 z-[-1] ml-auto lg:gap-4 h-screen w-full justify-center overflow-hidden overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-28 font-medium transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0 lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0 lg:pt-0 lg:opacity-100"
+						class="peer-focus:opacity-100 opacity-0 text-lg text-custom-main xl:pb-5 xl:px-4 font-normal absolute top-0 left-0 z-[-1] ml-auto xl:gap-4 h-screen w-full justify-center overflow-hidden overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-28 font-medium transition-[opacity,visibility] duration-300 xl:visible xl:relative xl:top-0 xl:z-0 xl:flex xl:h-full xl:w-auto xl:items-stretch xl:overflow-visible xl:bg-white/0 xl:px-0 xl:py-0 xl:pt-0 xl:opacity-100"
 					>
 						<li role="none" class="flex items-stretch">
 							<a
 								role="menuitem"
 								aria-haspopup="false"
-								class="flex items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-1"
+								class="flex w-full justify-end items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none xl:px-1"
 								href="/#our-solutions"
 							>
 								<span>Our Solutions</span></a
@@ -161,7 +161,7 @@
 							<a
 								role="menuitem"
 								aria-haspopup="false"
-								class="flex items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-1"
+								class="flex w-full justify-end items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none xl:px-1"
 								href="/#partners-and-clients"
 							>
 								<span>Partners and Clients</span></a
@@ -171,7 +171,7 @@
 							<a
 								role="menuitem"
 								aria-haspopup="false"
-								class="flex items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-1"
+								class="flex w-full justify-end items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none xl:px-1"
 								href="/#certifications"
 							>
 								<span>Certifications</span></a
@@ -181,7 +181,7 @@
 							<a
 								role="menuitem"
 								aria-haspopup="false"
-								class="flex items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-1"
+								class="flex w-full justify-end items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none xl:px-1"
 								href="/#about-us"
 							>
 								<span>About Us</span></a
@@ -191,7 +191,7 @@
 							<a
 								role="menuitem"
 								aria-haspopup="false"
-								class="flex items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-1"
+								class="flex w-full justify-end items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none xl:px-1"
 								href="/#in-the-media"
 							>
 								<span>In the Media</span></a
@@ -201,7 +201,7 @@
 							<a
 								role="menuitem"
 								aria-haspopup="false"
-								class="flex items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-1"
+								class="flex w-full justify-end items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none xl:px-1"
 								href="/#contact"
 							>
 								<span>Contact Us</span></a
@@ -214,35 +214,35 @@
 		<!-- End Basic Navbar-->
 
 		<!-- Start Basic Hero -->
-		<div class="flex flex-col w-full h-[70vh] pt-0 lg:p-5">
-			<div class="flex flex-col-reverse mt-20 lg:flex-row lg:mt-16">
+		<div class="flex flex-col w-full h-[70vh] pt-0 xl:p-5">
+			<div class="flex flex-col-reverse mt-20 xl:flex-row xl:mt-16">
 				<div
-					class="flex items-end justify-center p-5 mt-5 lg:mt-0 lg:w-1/2"
+					class="flex items-end justify-center p-5 mt-5 xl:mt-0 xl:w-1/2"
 				>
-					<div class="flex flex-col w-full max-w-2xl">
-						<div class="text-lg font-bold lg:text-2xl lg:ml-1">
+					<div class="flex flex-col w-full xl:max-w-2xl">
+						<div class="text-lg font-bold xl:text-2xl xl:ml-1">
 							PCI DSS, PCI SSLC, PCI PIN CERTIFIED
 						</div>
 						<h1
-							class="mt-3 text-6xl font-semibold lg:mt-0 lg:text-8xl text-custom-main"
+							class="mt-3 text-6xl font-semibold xl:mt-0 xl:text-8xl text-custom-main"
 						>
 							Innovating the way we pay
 						</h1>
 						<a
-							class="flex items-center px-10 mt-8 text-xl text-white duration-300 rounded-lg cursor-pointer lg:mt-5 lg:mt-16 max-w-max lg:px-16 lg:text-xl h-12 bg-custom-main hover:bg-custom-main/90"
+							class="flex items-center px-10 mt-8 text-xl text-white duration-300 rounded-lg cursor-pointer xl:mt-5 xl:mt-16 max-w-max xl:px-16 xl:text-xl h-12 bg-custom-main hover:bg-custom-main/90"
 							href="/#contact"
 						>
 							Talk to our team
 						</a>
 					</div>
 				</div>
-				<div class="relative flex items-end w-full lg:w-1/2 lg:p-5">
+				<div class="relative flex items-end w-full xl:w-1/2 xl:p-5">
 					<img
 						fetchpriority="high"
 						loading="lazy"
 						alt="Hero Image"
 						src="/assets/media/FTTHERO-1067.jpg"
-						class="lg:rounded-b-xl"
+						class="xl:rounded-b-xl"
 					/>
 					<!-- <div
 						class="w-full bg-gradient-to-t from-white from-25% to-transparent h-1/2 bottom-0 left-0 flex absolute"
@@ -255,62 +255,62 @@
 		<div class="">
 			<!-- Start Basic Features -->
 			<div
-				class="flex flex-col items-center justify-center px-5 py-20 lg:py-10 lg:px-44"
+				class="flex flex-col items-center justify-center px-5 py-20 lg:py-0 xl:py-10 xl:px-44"
 			>
-				<h2 class="text-3xl text-left lg:text-5xl/16">
+				<h2 class="text-3xl text-left xl:text-5xl/16">
 					Empowering financial institutions, payment facilitators, and
 					networks with cutting-edge payment software—engineered for
 					the acquirer side of the PCI ecosystem.
 				</h2>
 
 				<div
-					class="grid w-full grid-cols-1 gap-10 mt-12 text-center lg:gap-16 lg:grid-cols-4 lg:mt-28 lg:px-36"
+					class="grid w-full grid-cols-1 gap-10 mt-12 text-center xl:gap-16 lg:grid-cols-4 xl:mt-28 xl:px-36"
 				>
 					<div
-						class="flex flex-col justify-center items-center gap-2 lg:gap-5 w-full lg:aspect-[1/1.2]"
+						class="flex flex-col justify-center items-center gap-2 xl:gap-5 w-full xl:aspect-[1/1.2]"
 					>
 						<img
 							alt="Icon"
 							src="/assets/icons/icon-bank.svg"
-							class="h-16 lg:h-24"
+							class="h-16 xl:h-24"
 						/>
-						<span class="text-xl font-semibold lg:text-4xl h-1/2">
+						<span class="text-xl font-semibold xl:text-4xl h-1/2">
 							+ 40 Financial Institutions
 						</span>
 					</div>
 					<div
-						class="flex flex-col gap-5 justify-center items-center w-full lg:aspect-[1/1.2]"
+						class="flex flex-col gap-5 justify-center items-center w-full xl:aspect-[1/1.2]"
 					>
 						<img
 							alt="Icon"
 							src="/assets/icons/icon-dollar-bills.svg"
-							class="h-16 lg:h-24"
+							class="h-16 xl:h-24"
 						/>
-						<span class="text-xl font-semibold lg:text-4xl h-1/2">
+						<span class="text-xl font-semibold xl:text-4xl h-1/2">
 							+ $4.5M processed annually
 						</span>
 					</div>
 					<div
-						class="flex flex-col gap-7 justify-center items-center w-full lg:aspect-[1/1.2]"
+						class="flex flex-col gap-7 justify-center items-center w-full xl:aspect-[1/1.2]"
 					>
 						<img
 							alt="Icon"
 							src="/assets/icons/icon-dollar.svg"
-							class="h-16 lg:h-24"
+							class="h-16 xl:h-24"
 						/>
-						<span class="text-xl font-semibold lg:text-4xl h-1/2">
+						<span class="text-xl font-semibold xl:text-4xl h-1/2">
 							+ 2M transactions per day
 						</span>
 					</div>
 					<div
-						class="flex flex-col gap-5 justify-center items-center w-full lg:aspect-[1/1.2]"
+						class="flex flex-col gap-5 justify-center items-center w-full xl:aspect-[1/1.2]"
 					>
 						<img
 							alt="Icon"
 							src="/assets/icons/icon-contactless.svg"
-							class="h-16 lg:h-24"
+							class="h-16 xl:h-24"
 						/>
-						<span class="text-xl font-semibold lg:text-4xl h-1/2">
+						<span class="text-xl font-semibold xl:text-4xl h-1/2">
 							+ 500K merchants processing on our platform
 						</span>
 					</div>
@@ -321,7 +321,7 @@
 			<!-- Start Basic Solutions -->
 			<div
 				id="our-solutions"
-				class="flex flex-col justify-center items-center min-h-screen gap-10 px-5 py-10 lg:py-20 lg:px-44 bg-custom-bg-gray"
+				class="flex flex-col justify-center items-center min-h-screen gap-10 px-5 py-10 xl:py-20 xl:px-44 bg-custom-bg-gray"
 			>
 				<div class="flex flex-col w-full">
 					<h2 class="text-4xl font-bold text-white">Our Solutions</h2>
@@ -331,11 +331,11 @@
 						business.
 					</span>
 				</div>
-				<div class="flex flex-col gap-20">
-					<div class="flex flex-col text-white w-full lg:px-20">
+				<div class="flex flex-col gap-20 w-full xl:w-auto">
+					<div class="flex flex-col text-white w-full xl:px-20">
 						<h2 class="text-3xl font-bold">Payment Solutions</h2>
 						<div
-							class="grid gap-10 mt-4 lg:mt-8 lg:gap-10 lg:grid-cols-2"
+							class="grid gap-10 mt-4 xl:mt-8 xl:gap-10 xl:grid-cols-2"
 						>
 							<div class="flex flex-col gap-5">
 								<img
@@ -382,10 +382,10 @@
 						</div>
 					</div>
 
-					<div class="flex flex-col text-white w-full lg:px-20">
+					<div class="flex flex-col text-white w-full xl:px-20">
 						<h2 class="text-3xl font-bold">Platform Solutions</h2>
 						<div
-							class="grid gap-10 mt-4 lg:mt-8 lg:gap-10 lg:grid-cols-2"
+							class="grid gap-10 mt-4 xl:mt-8 xl:gap-10 xl:grid-cols-2"
 						>
 							<div class="flex flex-col gap-5">
 								<img
@@ -393,7 +393,7 @@
 									src="/assets/media/cloudCycle-640x480.jpg"
 									class="rounded-xl"
 								/>
-								<div class="text-lg lg:text-2xl">
+								<div class="text-lg xl:text-2xl">
 									<h2 class="font-bold">
 										Processing, Clearing Settlement
 										Capabilities
@@ -417,7 +417,7 @@
 									src="/assets/media/reporting-640x480.jpg"
 									class="rounded-xl"
 								/>
-								<div class="text-lg lg:text-2xl">
+								<div class="text-lg xl:text-2xl">
 									<h2 class="font-bold">
 										Reporting and Onboarding Services
 									</h2>
@@ -443,7 +443,7 @@
 			<!-- Start Logo Cloud -->
 			<div
 				id="partners-and-clients"
-				class="flex flex-col min-h-screen px-5 py-10 lg:justify-center lg:py-20 lg:px-44"
+				class="flex flex-col min-h-screen px-5 py-10 xl:justify-center xl:py-20 xl:px-44"
 			>
 				<div class="flex flex-col pb-10">
 					<h2 class="text-4xl font-bold text-custom-main">
@@ -455,9 +455,9 @@
 				</div>
 
 				<div
-					class="grid w-full grid-cols-1 gap-5 lg:gap-0 lg:grid-cols-8"
+					class="grid w-full grid-cols-1 gap-5 xl:gap-0 xl:grid-cols-8"
 				>
-					<div class="flex w-full h-full lg:col-span-4">
+					<div class="flex w-full h-full xl:col-span-4">
 						<div
 							class="relative w-5 my-5 border-l border-gray-400 border-dashed"
 						>
@@ -466,11 +466,11 @@
 							></div>
 						</div>
 						<div class="flex flex-col w-full h-full">
-							<h2 class="text-3xl font-bold lg:text-4xl">
+							<h2 class="text-3xl font-bold xl:text-4xl">
 								Financial Institutions
 							</h2>
 							<div
-								class="grid grid-cols-2 lg:grid-cols-4 p-2 lg:p-5 gap-2 [&>img]:p-1 [&>img]:border [&>img]:border-gray-100 [&>img]:rounded-lg [&>img]:hover:shadow-xl [&>img]:h-14 [&>img]:w-full [&>img]:object-contain [&>img]:hover:scale-110 [&>img]:duration-300"
+								class="grid grid-cols-2 xl:grid-cols-4 p-2 xl:p-5 gap-2 [&>img]:p-1 [&>img]:border [&>img]:border-gray-100 [&>img]:rounded-lg [&>img]:hover:shadow-xl [&>img]:h-14 [&>img]:w-full [&>img]:object-contain [&>img]:hover:scale-110 [&>img]:duration-300"
 							>
 								<img
 									alt="Brand Logo"
@@ -545,7 +545,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="flex w-full h-full lg:col-span-2">
+					<div class="flex w-full h-full xl:col-span-2">
 						<div
 							class="relative w-5 my-5 border-l border-gray-400 border-dashed"
 						>
@@ -554,11 +554,11 @@
 							></div>
 						</div>
 						<div class="flex flex-col w-full h-full">
-							<h2 class="text-3xl font-bold lg:text-4xl">
+							<h2 class="text-3xl font-bold xl:text-4xl">
 								Payfacs
 							</h2>
 							<div
-								class="grid grid-cols-2 p-2 lg:p-5 gap-2 [&>img]:p-1 [&>img]:border [&>img]:border-gray-100 [&>img]:rounded-lg [&>img]:hover:shadow-xl [&>img]:h-14 [&>img]:w-full [&>img]:object-contain [&>img]:hover:scale-110 [&>img]:duration-300"
+								class="grid grid-cols-2 p-2 xl:p-5 gap-2 [&>img]:p-1 [&>img]:border [&>img]:border-gray-100 [&>img]:rounded-lg [&>img]:hover:shadow-xl [&>img]:h-14 [&>img]:w-full [&>img]:object-contain [&>img]:hover:scale-110 [&>img]:duration-300"
 							>
 								<img
 									alt="Brand Logo"
@@ -609,7 +609,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="flex w-full h-full lg:col-span-2">
+					<div class="flex w-full h-full xl:col-span-2">
 						<div
 							class="relative w-5 my-5 border-l border-gray-400 border-dashed"
 						>
@@ -618,10 +618,10 @@
 							></div>
 						</div>
 						<div class="flex flex-col w-full h-full">
-							<h2 class="text-3xl font-bold lg:text-4xl">
+							<h2 class="text-3xl font-bold xl:text-4xl">
 								Networks
 							</h2>
-							<div class="grid grid-cols-1 gap-5 p-2 lg:p-5">
+							<div class="grid grid-cols-1 gap-5 p-2 xl:p-5">
 								<div
 									class="flex flex-col items-start gap-2 p-3 border border-gray-100 rounded-lg"
 								>
@@ -662,33 +662,33 @@
 			<!-- Start Basic Certifications -->
 			<div
 				id="certifications"
-				class="flex flex-col justify-center min-h-screen px-5 py-10 lg:px-44 lg:py-20 bg-custom-bg-gray"
+				class="flex flex-col justify-center min-h-screen px-5 py-10 xl:px-44 xl:py-20 bg-custom-bg-gray"
 			>
 				<div class="flex flex-col">
 					<h2 class="text-4xl font-bold text-white">
 						Certifications
 					</h2>
 					<div
-						class="grid grid-cols-1 gap-5 mt-5 lg:gap-20 lg:grid-cols-3"
+						class="grid grid-cols-1 gap-5 mt-5 xl:gap-20 xl:grid-cols-3"
 					>
 						<img
 							alt="DSS Certification"
 							src="/assets/media/pci-dss@1x.png"
-							class="rounded-2xl"
+							class="lg:rounded-4xl rounded-2xl w-full"
 						/>
 						<img
 							alt="SSLC Certification"
 							src="/assets/media/pci-sslc@1x.png"
-							class="rounded-2xl"
+							class="lg:rounded-4xl rounded-2xl w-full"
 						/>
 						<img
 							alt="DSS Certification"
 							src="/assets/media/pci-dss-3@1x.png"
-							class="rounded-2xl"
+							class="lg:rounded-4xl rounded-2xl w-full"
 						/>
 					</div>
 				</div>
-				<div class="flex justify-center lg:justify-end">
+				<div class="flex justify-center xl:justify-end">
 					<a
 						target="_blank"
 						class="relative flex items-center h-10 mt-5 text-sm text-white duration-300 border border-2 border-white rounded-lg max-w-max px-18 hover:bg-white hover:text-black group/link"
@@ -703,13 +703,13 @@
 			<!-- Start Basic About -->
 			<div
 				id="about-us"
-				class="flex flex-col justify-center min-h-screen px-5 py-10 lg:px-44 lg:py-20"
+				class="flex flex-col justify-center xl:min-h-screen px-5 py-10 xl:px-44 xl:py-20"
 			>
 				<div class="flex flex-col pb-10">
 					<h2 class="text-4xl font-bold text-custom-main">
 						About Us
 					</h2>
-					<span class="flex flex-col gap-5 mt-2 text-xl lg:mt-4">
+					<span class="flex flex-col gap-5 mt-6 text-xl xl:mt-4">
 						<p>
 							Founded in 2008, FTTechnologies is a trusted
 							provider of cutting-edge electronic payment
@@ -740,7 +740,7 @@
 
 				<div class="flex flex-col">
 					<h2 class="text-4xl font-bold">Highlights</h2>
-					<div class="grid gap-5 mt-5 lg:mt-10 lg:grid-cols-3">
+					<div class="grid gap-5 mt-5 xl:mt-10 xl:grid-cols-3">
 						<div class="text-xl">
 							<h2 class="font-bold">2008</h2>
 							<p>
@@ -791,12 +791,12 @@
 			<!-- Start Basic Media -->
 			<div
 				id="in-the-media"
-				class="flex flex-col justify-center min-h-screen px-5 py-10 lg:px-44 lg:py-20 bg-custom-bg-gray"
+				class="flex flex-col justify-center min-h-screen px-5 py-10 xl:px-44 xl:py-20 bg-custom-bg-gray"
 			>
 				<div class="flex flex-col gap-5">
 					<h2 class="text-4xl font-bold text-white">In the Media</h2>
 					<div
-						class="grid grid-cols-1 gap-5 lg:mt-8 lg:gap-20 lg:grid-cols-3"
+						class="grid grid-cols-1 gap-5 xl:mt-8 xl:gap-20 xl:grid-cols-3"
 					>
 						<!-- <div class="flex justify-center w-full col-span-1"> -->
 						<img
@@ -805,7 +805,7 @@
 							class="rounded-2xl w-full aspect-auto"
 						/>
 						<!-- </div> -->
-						<div class="flex flex-col text-white lg:col-span-2">
+						<div class="flex flex-col text-white xl:col-span-2">
 							<div class="flex flex-col gap-5 text-xl">
 								<p>
 									With FT Technologies and Visa Acceptance
@@ -825,7 +825,7 @@
 								</p>
 							</div>
 							<div
-								class="flex justify-center mt-10 lg:justify-end"
+								class="flex justify-center mt-10 xl:justify-end"
 							>
 								<a
 									target="_blank"
@@ -846,7 +846,7 @@
 			<!-- Start Basic Contact -->
 			<div
 				id="contact"
-				class="flex flex-col justify-center min-h-screen px-5 py-20 lg:px-44"
+				class="flex flex-col justify-center min-h-screen px-5 py-20 xl:px-44"
 			>
 				<div class="flex flex-col pb-10">
 					<h2 class="text-4xl font-bold text-custom-main">
@@ -857,7 +857,7 @@
 					name="contact"
 					id="contact_form"
 					action=""
-					class="flex flex-col gap-10 lg:gap-20 lg:flex-row"
+					class="flex flex-col gap-10 xl:gap-20 xl:flex-row"
 				>
 					<div class="flex flex-col w-full gap-5">
 						<div class="flex flex-col gap-1">
@@ -996,7 +996,7 @@
 							></textarea>
 						</div>
 
-						<div class="flex justify-end w-full -mt-5">
+						<div class="flex xl:justify-end xl:w-full -mt-5">
 							<button
 								type="submit"
 								class="relative cursor-pointer flex items-center h-10 px-10 mt-5 text-base text-white duration-300 border border-2 border-white rounded-lg bg-custom-main max-w-max hover:bg-custom-main/70 group/link"
@@ -1015,7 +1015,7 @@
 							<img
 								alt="Headquarters"
 								src="/assets/media/screenshot-2025-09-18-at-12-46-49-pm@1x.jpg"
-								class="mt-5 rounded-lg lg:rounded-2xl"
+								class="mt-5 rounded-lg xl:rounded-2xl"
 							/>
 						</div>
 					</div>
@@ -1024,19 +1024,14 @@
 			<!-- End Basic Contact -->
 
 			<!-- Start Footer with logo and subfooter -->
-			<footer class="text-white">
+			<footer class="text-white h-full">
 				<!-- Main footer -->
 				<div
-					class="pt-16 pb-12 text-sm border-t border-slate-200 bg-[#013DA5]"
+					class="pt-16 pb-12 text-sm border-t border-slate-200 bg-custom-main"
 				>
 					<div class="container px-6 mx-auto">
-						<div
-							class="grid grid-cols-1 gap-6 md:grid-cols-8 lg:grid-cols-12"
-						>
-							<div
-								class="col-span-1 md:col-span-8 lg:col-span-8"
-								aria-labelledby="footer-header"
-							>
+						<div class="">
+							<div class="" aria-labelledby="footer-header">
 								<a
 									aria-current="page"
 									class="flex items-center gap-2 mb-6 text-base font-medium leading-6 select-none whitespace-nowrap text-slate-700 focus:outline-none"
@@ -1044,22 +1039,22 @@
 								>
 									<img
 										alt="Arrows"
-										class="h-12 lg:h-auto"
+										class="h-12 xl:h-auto"
 										src="/assets/logo/path-25-2@1x.png"
 									/>
 									<img
 										alt="F Letter"
-										class="h-12 lg:h-auto"
+										class="h-12 xl:h-auto"
 										src="/assets/logo/path-26-2@1x.png"
 									/>
 									<img
 										alt="T Letter"
-										class="h-12 lg:h-auto"
+										class="h-12 xl:h-auto"
 										src="/assets/logo/path-27-2@1x.png"
 									/>
 									<img
 										alt="T letter"
-										class="h-12 lg:h-auto"
+										class="h-12 xl:h-auto"
 										src="/assets/logo/path-28-2@1x.png"
 									/>
 									<span class="sr-only"
@@ -1067,124 +1062,134 @@
 									>
 								</a>
 								<div
-									class="-mt-3 text-2xl font-normal lg:text-3xl"
+									class="-mt-3 text-2xl font-normal xl:text-3xl"
 								>
 									Innovating the way we pay
 								</div>
 							</div>
 
-							<nav
-								class="col-span-2 lg:col-span-2"
-								aria-labelledby="footer-about-5-logo"
+							<div
+								class="flex flex-col lg:flex-row mt-10 lg:mt-0 gap-10 w-full"
 							>
-								<h3
-									class="mb-6 text-3xl font-bold"
-									id="footer-about-5-logo"
+								<div class="w-full hidden md:flex"></div>
+								<nav
+									class="col-span-2 xl:col-span-2 min-w-max"
+									aria-labelledby="footer-about-5-logo"
 								>
-									Links
-								</h3>
-								<ul class="text-lg">
-									<li class="mb-2 leading-6">
-										<a
-											href="/#our-solutions"
-											class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
-										>
-											Our Solutions
-										</a>
-									</li>
-									<li class="mb-2 leading-6">
-										<a
-											href="/#partners-and-clients"
-											class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
-										>
-											Partners and Clients
-										</a>
-									</li>
-									<li class="mb-2 leading-6">
-										<a
-											href="/#certifications"
-											class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
-										>
-											Certifications
-										</a>
-									</li>
-									<li class="mb-2 leading-6">
-										<a
-											href="/#about-us"
-											class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
-										>
-											About Us
-										</a>
-									</li>
-									<li class="mb-2 leading-6">
-										<a
-											href="/#in-the-media"
-											class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
-										>
-											In the Media
-										</a>
-									</li>
-									<li class="mb-2 leading-6">
-										<a
-											href="/#contact"
-											class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
-										>
-											Contact Us
-										</a>
-									</li>
-								</ul>
-							</nav>
-							<nav
-								class="col-span-2 md:col-span-4 lg:col-span-2"
-								aria-labelledby="footer-get-in-touch-5-logo"
-							>
-								<h3
-									class="mb-6 text-3xl font-bold"
-									id="footer-about-5-logo"
+									<h3
+										class="mb-6 text-3xl font-bold"
+										id="footer-about-5-logo"
+									>
+										Links
+									</h3>
+									<ul class="text-lg">
+										<li class="mb-2 leading-6">
+											<a
+												href="/#our-solutions"
+												class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
+											>
+												Our Solutions
+											</a>
+										</li>
+										<li class="mb-2 leading-6">
+											<a
+												href="/#partners-and-clients"
+												class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
+											>
+												Partners and Clients
+											</a>
+										</li>
+										<li class="mb-2 leading-6">
+											<a
+												href="/#certifications"
+												class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
+											>
+												Certifications
+											</a>
+										</li>
+										<li class="mb-2 leading-6">
+											<a
+												href="/#about-us"
+												class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
+											>
+												About Us
+											</a>
+										</li>
+										<li class="mb-2 leading-6">
+											<a
+												href="/#in-the-media"
+												class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
+											>
+												In the Media
+											</a>
+										</li>
+										<li class="mb-2 leading-6">
+											<a
+												href="/#contact"
+												class="transition-colors duration-300 opacity-75 hover:opacity-100 focus:text-custom-main"
+											>
+												Contact Us
+											</a>
+										</li>
+									</ul>
+								</nav>
+								<nav
+									class="col-span-2 xl:col-span-4 xl:col-span-2"
+									aria-labelledby="footer-get-in-touch-5-logo"
 								>
-									Contact
-								</h3>
-								<p class="text-xl">
-									<strong>Headquarters:</strong> <br />
-									Costa Rica, San José, Santa Ana Town Center,
-									2nd floor contactenos@fttecnologias.com
-								</p>
+									<h3
+										class="mb-6 text-3xl font-bold"
+										id="footer-about-5-logo"
+									>
+										Contact
+									</h3>
+									<p class="text-xl">
+										<strong>Headquarters:</strong> <br />
+										Costa Rica, San José, Santa Ana Town
+										Center, 2nd floor
+										contactenos@fttecnologias.com
+									</p>
 
-								<div class="flex gap-5 mt-5 lg:mt-2">
-									<a
-										target="_blank"
-										href="https://www.linkedin.com/company/ftt-technologies"
-									>
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											class="duration-300 opacity-75 cursor-pointer size-14 hover:scale-110 hover:opacity-100"
-											viewBox="0 0 24 24"
+									<div class="flex gap-5 mt-5 xl:mt-2">
+										<a
+											target="_blank"
+											href="https://www.linkedin.com/company/ftt-technologies"
 										>
-											<path
-												fill="currentColor"
-												d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"
-											/>
-										</svg>
-										<span class="sr-only">LinkedIn</span>
-									</a>
-									<a
-										target="_blank"
-										href="https://wa.me/+50671973960"
-									>
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											class="duration-300 opacity-75 cursor-pointer size-14 hover:scale-110 hover:opacity-100"
-											viewBox="0 0 24 24"
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												class="duration-300 opacity-75 cursor-pointer size-14 hover:scale-110 hover:opacity-100"
+												viewBox="0 0 24 24"
+											>
+												<path
+													fill="currentColor"
+													d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"
+												/>
+											</svg>
+											<span class="sr-only"
+												>LinkedIn</span
+											>
+										</a>
+										<a
+											target="_blank"
+											href="https://wa.me/+50671973960"
 										>
-											<path
-												fill="currentColor"
-												d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.39-4.19-1.15l-.3-.17l-3.12.82l.83-3.04l-.2-.32a8.2 8.2 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24M8.53 7.33c-.16 0-.43.06-.66.31c-.22.25-.87.86-.87 2.07c0 1.22.89 2.39 1 2.56c.14.17 1.76 2.67 4.25 3.73c.59.27 1.05.42 1.41.53c.59.19 1.13.16 1.56.1c.48-.07 1.46-.6 1.67-1.18s.21-1.07.15-1.18c-.07-.1-.23-.16-.48-.27c-.25-.14-1.47-.74-1.69-.82c-.23-.08-.37-.12-.56.12c-.16.25-.64.81-.78.97c-.15.17-.29.19-.53.07c-.26-.13-1.06-.39-2-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.12-.24-.01-.39.11-.5c.11-.11.27-.29.37-.44c.13-.14.17-.25.25-.41c.08-.17.04-.31-.02-.43c-.06-.11-.56-1.35-.77-1.84c-.2-.48-.4-.42-.56-.43c-.14 0-.3-.01-.47-.01"
-											/>
-										</svg>
-										<span class="sr-only">Whatsapp</span>
-									</a>
-								</div>
-							</nav>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												class="duration-300 opacity-75 cursor-pointer size-14 hover:scale-110 hover:opacity-100"
+												viewBox="0 0 24 24"
+											>
+												<path
+													fill="currentColor"
+													d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.39-4.19-1.15l-.3-.17l-3.12.82l.83-3.04l-.2-.32a8.2 8.2 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24M8.53 7.33c-.16 0-.43.06-.66.31c-.22.25-.87.86-.87 2.07c0 1.22.89 2.39 1 2.56c.14.17 1.76 2.67 4.25 3.73c.59.27 1.05.42 1.41.53c.59.19 1.13.16 1.56.1c.48-.07 1.46-.6 1.67-1.18s.21-1.07.15-1.18c-.07-.1-.23-.16-.48-.27c-.25-.14-1.47-.74-1.69-.82c-.23-.08-.37-.12-.56.12c-.16.25-.64.81-.78.97c-.15.17-.29.19-.53.07c-.26-.13-1.06-.39-2-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.12-.24-.01-.39.11-.5c.11-.11.27-.29.37-.44c.13-.14.17-.25.25-.41c.08-.17.04-.31-.02-.43c-.06-.11-.56-1.35-.77-1.84c-.2-.48-.4-.42-.56-.43c-.14 0-.3-.01-.47-.01"
+												/>
+											</svg>
+											<span class="sr-only"
+												>Whatsapp</span
+											>
+										</a>
+									</div>
+								</nav>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1192,10 +1197,10 @@
 				<div class="pt-2 border-t bg-custom-main border-gray-200/10">
 					<div class="container px-6 mx-auto">
 						<div
-							class="flex flex-col pb-3 lg:pb-0 lg:gap-5 lg:flex-row"
+							class="flex flex-col pb-3 xl:pb-0 md:gap-5 md:flex-row"
 						>
 							<ul
-								class="flex w-full gap-5 lg:justify-center lg:w-auto"
+								class="flex w-full gap-5 md:justify-center md:w-auto"
 							>
 								<li class="mb-2 leading-6">
 									<a
@@ -1226,7 +1231,7 @@
 								</li>
 							</ul>
 							<div
-								class="flex w-full lg:justify-center lg:w-auto"
+								class="flex w-full md:justify-start xl:justify-center xl:w-auto"
 							>
 								@ 2025 FT Technologies
 							</div>
