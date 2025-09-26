@@ -4,6 +4,22 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-2R7DVMZ0PF"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'G-2R7DVMZ0PF');
+		</script>
+
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 			* {
@@ -13,6 +29,7 @@
 				scroll-behavior: smooth;
 			}
 		</style>
+
 		<style type="text/tailwindcss">
 			@theme {
 				--color-custom-main: #003da5;
@@ -21,10 +38,7 @@
 				--color-custom-bg-gray: #252526;
 			}
 		</style>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css"
-		/>
+		<link rel="stylesheet" href="./style/cookieconsent.css" />
 
 		<title>Innovating the way we pay | FTTechnologies</title>
 
@@ -88,20 +102,19 @@
 				>
 					<!-- Brand logo -->
 					<a
-						id="WindUI"
-						aria-label="WindUI logo"
 						aria-current="page"
 						class="flex items-center font-bold gap-0.5 whitespace-nowrap lg:flex-1"
 						href="/"
 					>
 						<img
 							src="/assets/logo/ftt_logo_full.svg"
-							class="hidden h-16 lg:flex lg:-translate-x-22"
+							class="hidden h-16 lg:flex"
 						/>
 						<img
 							src="/assets/logo/ftt_logo_min.svg"
 							class="flex h-8 image-cover lg:hidden"
 						/>
+						<span class="sr-only">FTTechnologies Logo</span>
 					</a>
 					<!-- Mobile trigger -->
 					<button
@@ -199,7 +212,7 @@
 		<!-- End Basic Navbar-->
 
 		<!-- Start Basic Hero -->
-		<div class="flex flex-col w-full h-[90vh] pt-0 lg:p-5">
+		<div class="flex flex-col w-full h-[70vh] pt-0 lg:p-5">
 			<div class="flex flex-col-reverse mt-20 lg:flex-row lg:mt-16">
 				<div
 					class="flex items-end justify-center p-5 mt-5 lg:mt-0 lg:w-1/2"
@@ -221,14 +234,17 @@
 						</a>
 					</div>
 				</div>
-				<div class="flex items-end w-full lg:w-1/2 lg:p-5">
+				<div class="relative flex items-end w-full lg:w-1/2 lg:p-5">
 					<img
 						src="/assets/media/FTTHERO-1067.jpg"
 						class="lg:rounded-b-xl"
 					/>
+					<div
+						class="w-full bg-gradient-to-t from-white from-25% to-transparent h-1/2 bottom-0 left-0 flex absolute"
+					></div>
 				</div>
 			</div>
-			<div
+			<!-- <div
 				class="flex items-end justify-center h-full pb-10 lg:opacity-0"
 			>
 				<svg
@@ -241,16 +257,16 @@
 						d="M16.59 5.59L18 7l-6 6l-6-6l1.41-1.41L12 10.17zm0 6L18 13l-6 6l-6-6l1.41-1.41L12 16.17z"
 					/>
 				</svg>
-			</div>
+			</div> -->
 		</div>
 		<!-- End Basic Hero -->
 
 		<div class="">
 			<!-- Start Basic Features -->
 			<div
-				class="flex flex-col items-center justify-center min-h-screen px-5 py-10 lg:py-20 lg:px-44"
+				class="flex flex-col items-center justify-center px-5 py-20 lg:py-10 lg:px-44"
 			>
-				<h2 class="text-3xl text-center lg:text-5xl/16">
+				<h2 class="text-3xl text-left lg:text-5xl/16">
 					Empowering financial institutions, payment facilitators, and
 					networks with cutting-edge payment software—engineered for
 					the acquirer side of the PCI ecosystem.
@@ -458,58 +474,73 @@
 								class="grid grid-cols-2 lg:grid-cols-4 p-2 lg:p-5 gap-2 [&>img]:p-1 [&>img]:border [&>img]:border-gray-100 [&>img]:rounded-lg [&>img]:hover:shadow-xl [&>img]:h-14 [&>img]:w-full [&>img]:object-contain [&>img]:hover:scale-110 [&>img]:duration-300"
 							>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/if-bancoagricola-1@1x.png"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/if-serfinsa-1@1x.png"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/if-ficohsa-1@1x.png"
 								/>
 								<img
-									alt="TotalNet"
+									alt="Brand Logo"
 									src="/assets/logo_cloud/image-15-1@1x.png"
 									class="saturate-0"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/if-sistarbanc-1@1x.png"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/if-redenlace-1@1x.png"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/if-credicorpbank-1@1x.png"
 								/>
 								<img
-									alt="Banco General"
+									alt="Brand Logo"
 									src="/assets/logo_cloud/image-11-1@1x.png"
 									class="saturate-0"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/if-coopenae-1@1x.png"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/if-neonet-1@1x.png"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/if-banpais-1@1x.png"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/if-grupopromerica-1@1x.png"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/if-bancolafise-1@1x.png"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/if-banconacional-1@1x.png"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/if-cuscatlan-1@1x.png"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/if-bancopopular-1@1x.png"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/if-bancoindustrial-1@1x.png"
 								/>
 							</div>
@@ -531,36 +562,48 @@
 								class="grid grid-cols-2 p-2 lg:p-5 gap-2 [&>img]:p-1 [&>img]:border [&>img]:border-gray-100 [&>img]:rounded-lg [&>img]:hover:shadow-xl [&>img]:h-14 [&>img]:w-full [&>img]:object-contain [&>img]:hover:scale-110 [&>img]:duration-300"
 							>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/pf-naranjax-1@1x.png"
 								/>
 
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/pf-venitran-1@1x.png"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/pf-pagoplux-1@1x.png"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/pf-n1co-1@1x.png"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/pf-bepsa-1@1x.png"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/pf-payphone-1@1x.png"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/pf-handy-1@1x.png"
 								/>
-								<img src="/assets/logo_cloud/pf-mio-1@1x.png" />
+								<img
+									alt="Brand Logo"
+									src="/assets/logo_cloud/pf-mio-1@1x.png"
+								/>
 								<img
 									src="/assets/logo_cloud/pf-sonda-1@1x.png"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/image-12@1x.png"
 									class="saturate-0"
 								/>
 								<img
+									alt="Brand Logo"
 									src="/assets/logo_cloud/pf-myTapp-1@1x.png"
 								/>
 							</div>
@@ -583,6 +626,7 @@
 									class="flex flex-col items-start gap-2 p-3 border border-gray-100 rounded-lg"
 								>
 									<img
+										alt="Brand Logo"
 										class="h-10 saturate-0"
 										src="/assets/logo_cloud/image-13@1x.png"
 									/>
@@ -597,6 +641,7 @@
 									class="flex flex-col items-start gap-2 p-3 border border-gray-100 rounded-lg"
 								>
 									<img
+										alt="Brand Logo"
 										class="h-16 saturate-0"
 										src="/assets/logo_cloud/master_card.svg"
 									/>
@@ -661,7 +706,7 @@
 					<h2 class="text-4xl font-bold text-custom-main">
 						About Us
 					</h2>
-					<span class="flex flex-col gap-5 mt-2 text-xl lg:mt-10">
+					<span class="flex flex-col gap-5 mt-2 text-xl lg:mt-4">
 						<p>
 							Founded in 2008, FTTechnologies is a trusted
 							provider of cutting-edge electronic payment
@@ -750,12 +795,12 @@
 					<div
 						class="grid grid-cols-1 gap-5 lg:mt-8 lg:gap-20 lg:grid-cols-3"
 					>
-						<div class="flex justify-center w-full col-span-1">
-							<img
-								src="/assets/media/fttandvisaacceptancesolutions@1x.png"
-								class="rounded-2xl"
-							/>
-						</div>
+						<!-- <div class="flex justify-center w-full col-span-1"> -->
+						<img
+							src="/assets/media/fttandvisaacceptancesolutions@1x.png"
+							class="rounded-2xl w-full aspect-auto"
+						/>
+						<!-- </div> -->
 						<div class="flex flex-col text-white lg:col-span-2">
 							<div class="flex flex-col gap-5 text-xl">
 								<p>
@@ -812,22 +857,24 @@
 				>
 					<div class="flex flex-col w-full gap-5">
 						<div class="flex flex-col gap-1">
-							<label name="name" for="#name" class="text-xl"
+							<label name="name" for="name" class="text-xl"
 								>Full Name</label
 							>
 							<input
 								required
+								autocomplete="name"
 								class="h-12 px-3 border border-gray-300 rounded-lg focus:outline-gray-300"
 								id="name"
 								name="name"
 							/>
 						</div>
 						<div class="flex flex-col gap-1">
-							<label name="company" for="#company" class="text-xl"
+							<label name="company" for="company" class="text-xl"
 								>Company Name</label
 							>
 							<input
 								required
+								autocomplete="company"
 								class="h-12 px-3 border border-gray-300 rounded-lg focus:outline-gray-300"
 								id="company"
 								name="company"
@@ -845,10 +892,11 @@
 							/>
 						</div> -->
 						<div class="flex flex-col gap-1">
-							<label name="email" for="#email" class="text-xl"
+							<label name="email" for="email" class="text-xl"
 								>Email</label
 							>
 							<input
+								autocomplete="email"
 								required
 								class="h-12 px-3 border border-gray-300 rounded-lg focus:outline-gray-300"
 								id="email"
@@ -856,18 +904,19 @@
 							/>
 						</div>
 						<div class="flex flex-col gap-1">
-							<label name="phone" for="#phone" class="text-xl"
+							<label name="phone" for="phone" class="text-xl"
 								>Telephone</label
 							>
 							<input
 								required
+								autocomplete="phone"
 								class="h-12 px-3 border border-gray-300 rounded-lg focus:outline-gray-300"
 								id="phone"
 								name="phone"
 							/>
 						</div>
 						<div class="flex flex-col gap-1">
-							<label name="subject" for="#subject" class="text-xl"
+							<label name="subject" for="subject" class="text-xl"
 								>Subject</label
 							>
 
@@ -932,7 +981,7 @@
 						</select> -->
 						</div>
 						<div class="flex flex-col gap-1">
-							<label name="body" for="#body" class="text-xl"
+							<label name="body" for="body" class="text-xl"
 								>Message</label
 							>
 							<textarea
@@ -960,7 +1009,7 @@
 								floor
 							</p>
 							<img
-								src="/assets/media/screenshot-2025-09-18-at-12-46-49-pm@1x.png"
+								src="/assets/media/screenshot-2025-09-18-at-12-46-49-pm@1x.jpg"
 								class="mt-5 rounded-lg lg:rounded-2xl"
 							/>
 						</div>
@@ -1190,6 +1239,7 @@
 					d="M12 22A10 10 0 0 1 2 12A10 10 0 0 1 12 2a10 10 0 0 1 10 10a10 10 0 0 1-10 10m0-15l-5 5h3v4h4v-4h3z"
 				/>
 			</svg>
+			<span class="sr-only">Go to Top</span>
 		</button>
 		<!-- End FAB -->
 	</body>
