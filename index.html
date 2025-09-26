@@ -845,7 +845,7 @@
 				<form
 					name="contact"
 					id="contact_form"
-					action="mailto:os.nesty@gmail.com"
+					action=""
 					class="flex flex-col gap-10 lg:gap-20 lg:flex-row"
 				>
 					<div class="flex flex-col w-full gap-5">
@@ -1261,9 +1261,22 @@
 			_select.value = 'Request a demo';
 		};
 
-		// // Form submition
-		// const handleSubmitForm = (e) => {
-		// 	console.log(e);
-		// };
+		// Form submition
+
+		const form = document.getElementById('contact_form');
+
+		form.addEventListener('submit', function (event) {
+			event.preventDefault(); // Prevents the default form submission
+			console.log('Form submission prevented!');
+			const formData = new FormData(this);
+			const dataObject = Object.fromEntries(formData);
+
+			// console.log(dataObject);
+
+			form.body.value = `Hello, my name is ${dataObject.name}, I am contacting you from ${dataObject.company}. \n\n${dataObject.body} \n\nYou can reach me at ${dataObject.phone} or via email at ${dataObject.email}.`;
+			this.action = 'mailto:os.nesty@gmail.com';
+			this.submit();
+			// Add your custom form handling logic here, e.g., AJAX request, validation
+		});
 	</script>
 </html>
