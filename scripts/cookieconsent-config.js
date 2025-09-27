@@ -57,10 +57,10 @@ CookieConsent.run({
     },
 
     categories: {
-        necessary: {
-            enabled: true,  // this category is enabled by default
-            readOnly: true  // this category cannot be disabled
-        },
+        // necessary: {
+        //     enabled: true,  // this category is enabled by default
+        //     readOnly: true  // this category cannot be disabled
+        // },
         analytics: {
             autoClear: {
                 cookies: [
@@ -96,7 +96,7 @@ CookieConsent.run({
             en: {
                 consentModal: {
                     title: 'We use cookies',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+                    description: 'We use Google Analytics to collect basic, anonymous data about how visitors use our site',
                     acceptAllBtn: 'Accept all',
                     acceptNecessaryBtn: 'Reject all',
                     showPreferencesBtn: 'Manage Individual preferences',
@@ -117,15 +117,15 @@ CookieConsent.run({
                     sections: [
                         {
                             title: 'Your Privacy Choices',
-                            description: `In this panel you can express some preferences related to the processing of your personal information. You may review and change expressed choices at any time by resurfacing this panel via the provided link. To deny your consent to the specific processing activities described below, switch the toggles to off or use the “Reject all” button and confirm you want to save your choices.`,
+                            description: `We use cookies only to power Google Analytics, which helps us analyze anonymous traffic and improve your experience on our website. No personal data is stored or shared for other purposes`,
                         },
-                        {
-                            title: 'Strictly Necessary',
-                            description: 'These cookies are essential for the proper functioning of the website and cannot be disabled.',
+                        // {
+                        //     title: 'Strictly Necessary',
+                        //     description: 'These cookies are essential for the proper functioning of the website and cannot be disabled.',
 
-                            //this field will generate a toggle linked to the 'necessary' category
-                            linkedCategory: 'necessary'
-                        },
+                        //     //this field will generate a toggle linked to the 'necessary' category
+                        //     linkedCategory: 'necessary'
+                        // },
                         {
                             title: 'Performance and Analytics',
                             description: 'These cookies collect information about how you use our website. All of the data is anonymized and cannot be used to identify you.',
