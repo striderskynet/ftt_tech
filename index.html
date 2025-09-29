@@ -41,6 +41,7 @@
 		<link rel="stylesheet" href="./style/cookieconsent.css" />
 
 		<title>Innovating the way we pay | FTTechnologies</title>
+		<link rel="icon" href="/favicon.png" type="image/x-icon" />
 
 		<meta
 			name="title"
@@ -214,8 +215,8 @@
 		<!-- End Basic Navbar-->
 
 		<!-- Start Basic Hero -->
-		<div class="flex flex-col w-full pt-0 xl:p-5 xl:my-10">
-			<div class="flex flex-col-reverse mt-20 xl:flex-row xl:mt-16">
+		<div class="flex flex-col w-full pt-0 xl:p-5">
+			<div class="flex flex-col-reverse mt-20 xl:flex-row xl:mt-12">
 				<div
 					class="flex items-end justify-center p-5 mt-5 xl:mt-0 xl:w-1/2"
 				>
@@ -224,12 +225,18 @@
 							PCI DSS, PCI SSLC, PCI PIN CERTIFIED
 						</div>
 						<h1
-							class="mt-3 text-6xl font-semibold xl:mt-0 xl:text-8xl text-custom-main"
+							class="mt-3 text-6xl font-semibold xl:mt-0 xl:text-7xl text-custom-main"
 						>
 							Innovating the way we pay
 						</h1>
+						<h2 class="text-2xl mt-5 text-left xl:text-2xl">
+							Empowering financial institutions, payment
+							facilitators, and networks with cutting-edge payment
+							software engineered for the acquirer side of the PCI
+							ecosystem.
+						</h2>
 						<a
-							class="flex items-center px-10 mt-8 text-xl text-white duration-300 rounded-lg cursor-pointer xl:mt-5 xl:mt-16 max-w-max xl:px-16 xl:text-xl h-12 bg-custom-main hover:bg-custom-main/90"
+							class="flex items-center px-10 mt-8 text-xl text-white duration-300 rounded-lg cursor-pointer xl:mt-5 xl:mt-8 max-w-max xl:px-16 xl:text-xl h-12 bg-custom-main hover:bg-custom-main/90"
 							href="/#contact"
 						>
 							Talk to our team
@@ -249,22 +256,12 @@
 					></div> -->
 				</div>
 			</div>
-		</div>
-		<!-- End Basic Hero -->
 
-		<div class="">
-			<!-- Start Basic Features -->
 			<div
-				class="flex flex-col items-center justify-center px-5 py-10 xl:px-44"
+				class="flex flex-col items-center justify-center pb-5 lg:pb-0 px-5 xl:px-44"
 			>
-				<h2 class="text-3xl text-left xl:text-5xl/16">
-					Empowering financial institutions, payment facilitators, and
-					networks with cutting-edge payment software engineered for
-					the acquirer side of the PCI ecosystem.
-				</h2>
-
 				<div
-					class="grid w-full grid-cols-1 gap-10 mt-12 text-center lg:grid-cols-4 lg:py-20"
+					class="grid w-full grid-cols-1 gap-10 mt-12 lg:mt-2 text-center lg:grid-cols-4 lg:py-5"
 				>
 					<div
 						class="flex flex-col justify-center items-center gap-2 xl:gap-5 w-full"
@@ -275,7 +272,7 @@
 							class="h-16 xl:h-24"
 						/>
 
-						<span class="text-xl font-semibold xl:text-4xl h-1/2">
+						<span class="text-xl font-semibold xl:text-2xl h-1/2">
 							+ 40 Financial Institutions
 						</span>
 					</div>
@@ -287,7 +284,7 @@
 							src="/assets/icons/icon-dollar-bills.svg"
 							class="h-16 xl:h-24"
 						/>
-						<span class="text-xl font-semibold xl:text-4xl h-1/2">
+						<span class="text-xl font-semibold xl:text-2xl h-1/2">
 							+ $4.5M processed annually
 						</span>
 					</div>
@@ -299,7 +296,7 @@
 							src="/assets/icons/icon-dollar.svg"
 							class="h-16 xl:h-24"
 						/>
-						<span class="text-xl font-semibold xl:text-4xl h-1/2">
+						<span class="text-xl font-semibold xl:text-2xl h-1/2">
 							+ 2M transactions per day
 						</span>
 					</div>
@@ -311,12 +308,18 @@
 							src="/assets/icons/icon-contactless.svg"
 							class="h-16 xl:h-24"
 						/>
-						<span class="text-xl font-semibold xl:text-4xl h-1/2">
+						<span class="text-xl font-semibold xl:text-2xl h-1/2">
 							+ 500K merchants processing on our platform
 						</span>
 					</div>
 				</div>
 			</div>
+		</div>
+		<!-- End Basic Hero -->
+
+		<div class="">
+			<!-- Start Basic Features -->
+
 			<!-- End Basic Features -->
 
 			<!-- Start Basic Solutions -->
@@ -325,27 +328,46 @@
 				class="flex flex-col justify-center items-center min-h-screen gap-10 px-5 py-10 xl:py-20 xl:px-44 bg-custom-bg-gray"
 			>
 				<div class="flex flex-col w-full">
-					<h2 class="text-4xl font-bold text-white">Our Solutions</h2>
+					<h2
+						class="flex items-center gap-2 text-4xl font-bold text-white"
+					>
+						<img
+							class="h-7 translate-y-1"
+							src="/assets/logo/logo_min_arrow_white.png"
+						/>
+						Our Solutions
+					</h2>
 					<span class="mt-2 text-xl text-white">
-						Every client is unique, as are our solutions. We develop
-						customized technologies that adapt to the needs of your
-						business.
+						Every client is unique, as are our
+						<a
+							href="/#payment"
+							class="font-bold underline underline"
+							>Payment</a
+						>
+						and
+						<a
+							class="font-bold underline underline"
+							href="/#platform"
+							>Platform</a
+						>
+						cloud-base solutions. We develop customized technologies
+						that adapt to the needs of your business.
 					</span>
 				</div>
 				<div class="flex flex-col gap-10 w-full xl:w-auto">
 					<div class="flex flex-col text-white w-full xl:px-20">
-						<h2 class="text-3xl font-bold">Payment</h2>
+						<h2 id="payment" class="text-3xl font-bold">
+							Payment Solutions
+						</h2>
 						<div
 							class="grid gap-10 mt-4 xl:mt-8 xl:gap-10 xl:grid-cols-2"
 						>
 							<div class="flex flex-col gap-5">
 								<div class="text-2xl">
-									<h2 class="font-bold">
-										Card Present Solutions
-									</h2>
+									<h2 class="font-bold">Card Present</h2>
 									<h2>
-										TaptoPhone (T2P), mPOS/POS, Tablets, and
-										Transit.
+										Tap to Phone, mPOS/POS/Tablets, and
+										Transit (MTT).
 									</h2>
 								</div>
 								<img
@@ -363,12 +385,10 @@
 							</div>
 							<div class="flex flex-col gap-5">
 								<div class="text-2xl">
-									<h2 class="font-bold">
-										Card Not Present Solutions
-									</h2>
+									<h2 class="font-bold">Card Not Present</h2>
 									<h2>
 										Shopping Cart, Card on File, Pay by
-										link, QR and P2P.
+										Link, QR and P2P.
 									</h2>
 								</div>
 								<img
@@ -389,7 +409,9 @@
 					</div>
 
 					<div class="flex flex-col text-white w-full xl:px-20">
-						<h2 class="text-3xl font-bold">Platform</h2>
+						<h2 id="platform" class="text-3xl font-bold">
+							Platform Solutions
+						</h2>
 						<div
 							class="grid gap-10 mt-4 xl:mt-8 xl:gap-10 xl:grid-cols-2"
 						>
@@ -398,11 +420,10 @@
 							>
 								<div class="text-2xl">
 									<h2 class="font-bold">
-										Processing, Clearing and Settlement
-										Solutions
+										Processing, Clearing & Settlement
 									</h2>
 									<h2>
-										Cloud based transactional switching,
+										Cloud-based transactional switching,
 										connecting networks and merchants.
 									</h2>
 								</div>
@@ -426,11 +447,11 @@
 							>
 								<div class="text-2xl">
 									<h2 class="font-bold">
-										Reporting and Onboarding Solutions
+										Reporting and Onboarding
 									</h2>
 									<h2>
-										Real-time data visibility with fast and
-										guided onboarding for your business.
+										Real-time reporting with fast-guided
+										onboarding for your business.
 									</h2>
 								</div>
 								<div class="gap-5 flex flex-col">
@@ -518,7 +539,13 @@
 				class="flex flex-col xl:min-h-screen px-5 py-10 xl:justify-center xl:py-20 xl:px-44"
 			>
 				<div class="flex flex-col pb-10">
-					<h2 class="text-4xl font-bold text-custom-main">
+					<h2
+						class="flex items-center gap-2 text-4xl font-bold text-custom-main"
+					>
+						<img
+							class="h-7 translate-y-1"
+							src="/assets/logo/logo_min_arrow_blue.svg"
+						/>
 						Partners and Clients
 					</h2>
 					<span class="mt-2 text-xl">
@@ -549,7 +576,7 @@
 							<div
 								class="bg-white left-0 w-1 flex h-1/6 top-0 -translate-1/2"
 							></div>
-							<svg
+							<!-- <svg
 								xmlns="http://www.w3.org/2000/svg"
 								class="size-8 absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 bg-white"
 								viewBox="0 0 24 24"
@@ -570,10 +597,12 @@
 									/>
 									<path d="M8 12h8m-4 4l4-4l-4-4" />
 								</g>
-							</svg>
+							</svg> -->
 						</div>
 						<div class="flex flex-col w-full h-full">
-							<h2 class="ml-2 text-3xl font-bold xl:text-4xl">
+							<h2
+								class="-ml-7 z-40 text-3xl font-bold xl:text-4xl"
+							>
 								Financial Institutions
 							</h2>
 							<div
@@ -659,31 +688,11 @@
 							<div
 								class="bg-white left-0 w-1 flex h-1/6 top-0 -translate-1/2"
 							></div>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="size-8 absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 bg-white"
-								viewBox="0 0 24 24"
-							>
-								<g
-									fill="none"
-									stroke="currentColor"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-								>
-									<rect
-										width="18"
-										height="18"
-										x="3"
-										y="3"
-										rx="2"
-									/>
-									<path d="M8 12h8m-4 4l4-4l-4-4" />
-								</g>
-							</svg>
 						</div>
 						<div class="flex flex-col w-full h-full">
-							<h2 class="ml-2 text-3xl font-bold xl:text-4xl">
+							<h2
+								class="-ml-7 z-40 text-3xl font-bold xl:text-4xl"
+							>
 								Payfacs
 							</h2>
 							<div
@@ -745,7 +754,7 @@
 							<div
 								class="bg-white left-0 w-1 flex h-1/6 top-0 -translate-1/2"
 							></div>
-							<svg
+							<!-- <svg
 								xmlns="http://www.w3.org/2000/svg"
 								class="size-8 absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 bg-white"
 								viewBox="0 0 24 24"
@@ -766,17 +775,19 @@
 									/>
 									<path d="M8 12h8m-4 4l4-4l-4-4" />
 								</g>
-							</svg>
+							</svg> -->
 						</div>
 						<div class="flex flex-col w-full h-full">
-							<h2 class="ml-2 text-3xl font-bold xl:text-4xl">
+							<h2
+								class="-ml-7 z-40 text-3xl font-bold xl:text-4xl"
+							>
 								Networks
 							</h2>
 							<div
 								class="lg:-ml-5 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-1 gap-5 p-2 xl:p-5"
 							>
 								<div
-									class="flex flex-col border items-start gap-2 p-3 border border-gray-100 rounded-lg justify-between"
+									class="flex flex-col items-start gap-2 p-3 rounded-lg justify-between"
 								>
 									<div class="h-full flex items-center">
 										<img
@@ -785,27 +796,27 @@
 											src="/assets/logo_cloud/image-13@1x.png"
 										/>
 									</div>
-									<a
+									<!-- <a
 										target="_blank"
 										href="https://partner.visa.com/site/partner-directory/ft-technologies.html"
 										class="ml-2 text-sm duration-300 text-custom-main hover:saturate-200"
 										>Go to Visa >></a
-									>
+									> -->
 								</div>
 								<div
-									class="flex flex-col border items-start gap-2 p-3 border border-gray-100 rounded-lg justify-between"
+									class="flex flex-col items-start gap-2 p-3 rounded-lg justify-between"
 								>
 									<img
 										alt="Brand Logo"
 										class="h-16 saturate-0"
 										src="/assets/logo_cloud/master_card.svg"
 									/>
-									<a
+									<!-- <a
 										target="_blank"
 										href="https://www.mastercard.com/content/dam/public/mastercardcom/globalrisk/pdf/SP_Post_List_11-01-24.pdf"
 										class="ml-2 text-sm duration-300 text-custom-main hover:saturate-200"
 										>Go to MasterCard >></a
-									>
+									> -->
 								</div>
 							</div>
 						</div>
@@ -820,7 +831,13 @@
 				class="flex flex-col justify-center min-h-screen px-5 py-10 xl:px-44 xl:py-20 bg-custom-bg-gray"
 			>
 				<div class="flex flex-col">
-					<h2 class="text-4xl font-bold text-white">
+					<h2
+						class="flex items-center gap-2 text-4xl font-bold text-white"
+					>
+						<img
+							class="h-7 translate-y-1"
+							src="/assets/logo/logo_min_arrow_white.png"
+						/>
 						Certifications
 					</h2>
 					<div
@@ -861,19 +878,43 @@
 				class="flex flex-col justify-center xl:min-h-screen px-5 py-10 xl:px-44 xl:py-20"
 			>
 				<div class="flex flex-col pb-10">
-					<h2 class="text-4xl font-bold text-custom-main">
+					<h2
+						class="flex items-center gap-2 text-4xl font-bold text-custom-main"
+					>
+						<img
+							class="h-7 translate-y-1"
+							src="/assets/logo/logo_min_arrow_blue.svg"
+						/>
 						About Us
 					</h2>
-					<span class="flex flex-col gap-5 mt-6 text-xl xl:mt-4">
+					<span class="flex flex-col gap-5 mt-6 text-xl xl:mt-8">
 						<p>
 							Founded in 2008, FTTechnologies is a trusted
-							provider of cutting-edge electronic payment
-							solutions for financial institutions, payment
-							facilitators, and networks worldwide. With over 15
-							years of industry expertise, we deliver secure,
-							agile, and scalable systems that meet the highest
-							international standards, including PCI, Visa, and
-							MasterCard compliance.
+							provider of cloud-base electronic payment solutions
+							for financial institutions, payment facilitators,
+							and networks worldwide. With over 15 years of
+							industry expertise, we deliver secure, agile, and
+							scalable systems that meet the highest international
+							standards, including
+							<a
+								target="_blank"
+								class="font-bold underline underline"
+								href="https://listings.pcisecuritystandards.org/assessors_and_solutions/software_lifecycle?reference=24-24.01307.001&agree=true"
+								>PCI</a
+							>,
+							<a
+								target="_blank"
+								href="https://partner.visa.com/site/partner-directory/ft-technologies.html"
+								class="font-bold underline underline"
+								>Visa</a
+							>, and
+							<a
+								target="_blank"
+								href="https://www.mastercard.com/content/dam/public/mastercardcom/globalrisk/pdf/SP_Post_List_11-01-24.pdf"
+								class="font-bold underline underline"
+								>Mastercard</a
+							>
+							compliance.
 						</p>
 						<p>
 							Driven by a global vision, our team blends deep
@@ -884,58 +925,112 @@
 							landscape with confidence.
 						</p>
 						<p>
-							At FT Technologies, we champion financial inclusion
+							At FTTechnologies, we champion financial inclusion
 							and digital transformation. Our commitment to
 							continuous innovation helps clients grow, enhance
-							their brand value, and expand into global
-							markets—securely and seamlessly.
+							their brand value, and expand into global markets,
+							securely and seamlessly.
 						</p>
 					</span>
 				</div>
 
 				<div class="flex flex-col">
-					<h2 class="text-4xl font-bold">Highlights</h2>
-					<div class="grid gap-5 mt-5 xl:mt-10 xl:grid-cols-3">
-						<div class="text-xl">
-							<h2 class="font-bold">2008</h2>
-							<p>
-								Company funded. First IVR payment solution
-								delivered
+					<h2 class="text-3xl font-bold">Key Milestones</h2>
+					<div class="grid gap-5 mt-5">
+						<div class="text-xl flex-col gap-2 flex">
+							<h2 class="font-bold">
+								2008 - Market Entry & First Solution
+							</h2>
+							<p class="text-base">
+								FTTechnologies entered the market with our first
+								production solution, partnering with Digicel to
+								launch an innovative IVR-based airtime top-up
+								platform in Honduras. This groundbreaking
+								service enabled users to recharge their mobile
+								phones online using credit or debit cards,
+								establishing our foundation in digital payment
+								solutions.
 							</p>
 						</div>
-						<div class="text-xl">
-							<h2 class="font-bold">2015</h2>
-							<p>
-								VisaNet Guatemala Processing Platform Migration.
-								(1MM Transactions per day)
+						<div class="text-xl flex-col gap-2 flex">
+							<h2 class="font-bold">
+								2015 - Platform Solutions at Scale
+							</h2>
+							<p class="text-base">
+								After two years of dedicated development,
+								FTTechnologies successfully migrated VisaNet
+								Guatemala's (now NeoNet) entire transaction
+								processing to our UNITY platform. The platform
+								launch also enabled Mastercard processing across
+								135,000+ terminals on day one. Today, NeoNet
+								processes over 1.5 million daily transactions, a
+								328% increase from the original 350,000 daily
+								transactions.
 							</p>
 						</div>
-						<div class="text-xl">
-							<h2 class="font-bold">2019</h2>
-							<p>
-								First company that implement productive
-								TaptoPhone with Visa in LATAM. (Banco Popular
-								Costa Rica)
+						<div class="text-xl flex-col gap-2 flex">
+							<h2 class="font-bold">
+								2019 - Tap to Phone Innovation
+							</h2>
+							<p class="text-base">
+								FTTechnologies launched the first Visa-branded
+								Tap to Phone solution in Latin America,
+								supported by Visa International and Banco
+								Popular de Costa Rica. Within nine months, we
+								integrated Mastercard capabilities. Our
+								cloud-based Tap to Phone service now serves 25+
+								clients across 13 Latin American countries.
 							</p>
 						</div>
-						<div class="text-xl">
-							<h2 class="font-bold">2020</h2>
-							<p>Visa Everywhere Initiative LAC</p>
+						<div class="text-xl flex-col gap-2 flex">
+							<h2 class="font-bold">
+								2020 - Regional Recognition
+							</h2>
+							<p class="text-base">
+								Selected by Visa to participate in the
+								prestigious Visa Everywhere Initiative event,
+								FTTechnologies competed alongside 50+ FinTech.
+								We presented our Tap to Phone solution with
+								fully digital onboarding and earned recognition
+								as one of the Top 10 most innovative companies
+								in Latin America, the only Central American
+								company to achieve this distinction among
+								competitors from major markets including Mexico
+								and Brazil.
+							</p>
 						</div>
-						<div class="text-xl">
-							<h2 class="font-bold">2022</h2>
-							<p>
-								Metro Panama (MTT) processing in the Cloud.
-								(Visa - Credicorp Bank)
+						<div class="text-xl flex-col gap-2 flex">
+							<h2 class="font-bold">
+								2022 - Record-Breaking Implementation
+							</h2>
+							<p class="text-base">
+								In partnership with Credicorp Bank of Panama,
+								Sonda, Visa, and Mastercard, FTTechnologies
+								deployed contactless card acceptance for the
+								Panama Metro system in just three months, a
+								record implementation time. All transactions are
+								processed through our cloud-based Transit (MTT)
+								solution, demonstrating our platform's speed and
+								reliability.
 							</p>
 						</div>
 
-						<div class="text-xl">
-							<h2 class="font-bold">2022</h2>
-							<p>
-								First Global TaptoPhone card present
-								implementation with PIN through Cybersource.
-								(Libélula Payfacs Bolivia)
+						<div class="text-xl flex-col gap-2 flex">
+							<h2 class="font-bold">
+								2022 - Global Technology Breakthrough
+							</h2>
+							<p class="text-base">
+								FTTechnologies certified PIN on COTS (SPoC)
+								service for our Cloud-based Tap to Phone Kernel.
+								FTTechnologies card present solutions certified
+								by Visa Acceptance Services (CyberSource),
+								becoming the first global solution to process
+								<a
+									target="_blank"
+									href="https://www.linkedin.com/posts/visa-acceptance-solutions_taptophone-smartpayments-visaacceptancesolutions-activity-7337888617538691072-8L8C?utm_source=share&utm_medium=member_desktop&rcm=ACoAAATjz1oBAVF2hNsXZKuaMFLcG_mvEpkZsNw"
+									class="font-bold underline underline"
+									>Tap to Phone with PIN in the cloud.
+								</a>
 							</p>
 						</div>
 					</div>
@@ -949,7 +1044,15 @@
 				class="flex flex-col justify-center min-h-screen px-5 py-10 xl:px-44 xl:py-20 bg-custom-bg-gray"
 			>
 				<div class="flex flex-col gap-5">
-					<h2 class="text-4xl font-bold text-white">In the Media</h2>
+					<h2
+						class="flex items-center gap-2 text-4xl font-bold text-white"
+					>
+						<img
+							class="h-7 translate-y-1"
+							src="/assets/logo/logo_min_arrow_white.png"
+						/>
+						In the Media
+					</h2>
 					<div
 						class="grid grid-cols-1 gap-5 xl:mt-8 xl:gap-20 xl:grid-cols-3"
 					>
@@ -963,7 +1066,7 @@
 						<div class="flex flex-col text-white xl:col-span-2">
 							<div class="flex flex-col gap-5 text-xl">
 								<p>
-									With FT Technologies and Visa Acceptance
+									With FTTechnologies and Visa Acceptance
 									Solutions, your phone becomes a powerful
 									payment device you can carry anywhere.
 								</p>
@@ -1002,7 +1105,13 @@
 				class="flex flex-col justify-center min-h-screen px-5 py-20 xl:px-44"
 			>
 				<div class="flex flex-col pb-10">
-					<h2 class="text-4xl font-bold text-custom-main">
+					<h2
+						class="flex items-center gap-2 text-4xl font-bold text-custom-main"
+					>
+						<img
+							class="h-7 translate-y-1"
+							src="/assets/logo/logo_min_arrow_blue.svg"
+						/>
 						Talk to Our Team
 					</h2>
 				</div>
@@ -1373,7 +1482,7 @@
 							<div
 								class="flex w-full md:justify-start xl:justify-center xl:w-auto"
 							>
-								@ 2025 FT Technologies
+								@ 2025 FTTechnologies
 							</div>
 						</div>
 					</div>
