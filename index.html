@@ -1218,10 +1218,16 @@
 							></textarea>
 						</div>
 
-						<div class="flex xl:justify-end xl:w-full -mt-5">
+						<div
+							class="flex flex-wrap-reverse flex-row-reverse xl:flex-row justify-end items-center xl:justify-end xl:w-full -mt-5"
+						>
+							<div
+								id="form_response"
+								class="text-emerald-700 mt-5 xl:mx-5"
+							></div>
 							<button
 								type="submit"
-								class="relative cursor-pointer flex items-center h-10 px-10 mt-5 text-base text-white duration-300 border border-2 border-white rounded-lg bg-custom-main max-w-max hover:bg-custom-main/70 group/link"
+								class="relative cursor-pointer mx-5 ms-0 xl:mx-0 flex items-center h-10 px-10 mt-5 text-base text-white duration-300 border border-2 border-white rounded-lg bg-custom-main max-w-max hover:bg-custom-main/70 group/link"
 							>
 								<span class="">Send Message</span>
 							</button>
@@ -1493,6 +1499,7 @@
 		// Form submition
 
 		const form = document.getElementById('contact_form');
+		const form_response = document.getElementById('form_response');
 
 		form.addEventListener('submit', function (event) {
 			event.preventDefault(); // Prevents the default form submission
@@ -1502,9 +1509,37 @@
 
 			// console.log(dataObject);
 
-			form.body.value = `Hello, my name is ${dataObject.name}, I am contacting you from ${dataObject.company}. \n\n${dataObject.body} \n\nYou can reach me at ${dataObject.phone} or via email at ${dataObject.email}.`;
-			this.action = 'contactenos@fttecnologias.com';
-			this.submit();
+			// console.log(form_response);
+			// return;
+			form_response.innerHTML = 'Sending form...';
+			fetch(
+				'https://formsubmit.co/ajax/ccb1ac6ace38e31a7227b39b1bef0e81',
+				{
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+						'Accept': 'application/json',
+					},
+					body: JSON.stringify({
+						subject: `${dataObject.subject} for ${dataObject.name}`,
+						name: dataObject.name,
+						email: dataObject.email,
+						company: dataObject.company,
+						phone: dataObject.phone,
+						message: dataObject.body,
+						_template: 'box',
+					}),
+				}
+			)
+				.then((response) => response.json())
+				.then((data) => {
+					// console.log(data.message);
+					form_response.innerHTML = data.message;
+				})
+				.catch((error) => console.log(error.message));
+			// form.body.value = `Hello, my name is ${dataObject.name}, I am contacting you from ${dataObject.company}. \n\n${dataObject.body} \n\nYou can reach me at ${dataObject.phone} or via email at ${dataObject.email}.`;
+			// this.action = 'contactenos@fttecnologias.com';
+			// this.submit();
 			// Add your custom form handling logic here, e.g., AJAX request, validation
 		});
 	</script>
