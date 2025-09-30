@@ -1512,25 +1512,22 @@
 			// console.log(form_response);
 			// return;
 			form_response.innerHTML = 'Sending form...';
-			fetch(
-				'https://formsubmit.co/ajax/ccb1ac6ace38e31a7227b39b1bef0e81',
-				{
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json',
-						'Accept': 'application/json',
-					},
-					body: JSON.stringify({
-						subject: `${dataObject.subject} for ${dataObject.name}`,
-						name: dataObject.name,
-						email: dataObject.email,
-						company: dataObject.company,
-						phone: dataObject.phone,
-						message: dataObject.body,
-						_template: 'box',
-					}),
-				}
-			)
+			fetch('https://formsubmit.co/ajax/os.nesty@gmail.com', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+					'Accept': 'application/json',
+				},
+				body: JSON.stringify({
+					subject: `${dataObject.subject} for ${dataObject.name}`,
+					name: dataObject.name,
+					email: dataObject.email,
+					company: dataObject.company,
+					phone: dataObject.phone,
+					message: dataObject.body,
+					_template: 'box',
+				}),
+			})
 				.then((response) => response.json())
 				.then((data) => {
 					// console.log(data.message);
