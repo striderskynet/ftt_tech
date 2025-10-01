@@ -6,7 +6,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 		<!-- Google tag (gtag.js) -->
-		<!-- <script
+		<script
 			async
 			src="https://www.googletagmanager.com/gtag/js?id=G-2R7DVMZ0PF"
 		></script>
@@ -18,7 +18,7 @@
 			gtag('js', new Date());
 
 			gtag('config', 'G-2R7DVMZ0PF');
-		</script> -->
+		</script>
 
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
@@ -1497,7 +1497,6 @@
 		};
 
 		// Form submition
-
 		const form = document.getElementById('contact_form');
 		const form_response = document.getElementById('form_response');
 
@@ -1507,10 +1506,6 @@
 			const formData = new FormData(this);
 			const dataObject = Object.fromEntries(formData);
 
-			// console.log(dataObject);
-
-			// console.log(form_response);
-			// return;
 			form_response.innerHTML = 'Sending form...';
 			fetch('https://formsubmit.co/ajax/info@fttechnologies.io', {
 				method: 'POST',
@@ -1534,10 +1529,6 @@
 					form_response.innerHTML = data.message;
 				})
 				.catch((error) => console.log(error.message));
-			// form.body.value = `Hello, my name is ${dataObject.name}, I am contacting you from ${dataObject.company}. \n\n${dataObject.body} \n\nYou can reach me at ${dataObject.phone} or via email at ${dataObject.email}.`;
-			// this.action = 'contactenos@fttecnologias.com';
-			// this.submit();
-			// Add your custom form handling logic here, e.g., AJAX request, validation
 		});
 	</script>
 </html>
