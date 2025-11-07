@@ -1,3 +1,4 @@
 {
-	"azureAutomation.directory.basePath": "c:\\Users\\Nesty"
+	"azureAutomation.directory.basePath": "c:\\Users\\Nesty",
+	"liveServer.settings.port": 5504
 }
