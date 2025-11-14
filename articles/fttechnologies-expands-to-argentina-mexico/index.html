@@ -5,21 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-		<!-- Google tag (gtag.js) -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-2R7DVMZ0PF"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
-
-			gtag('config', 'G-2R7DVMZ0PF');
-		</script>
-
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 			* {
@@ -38,7 +23,6 @@
 				--color-custom-bg-gray: #252526;
 			}
 		</style>
-		<link rel="stylesheet" href="/style/cookieconsent.css" />
 
 		<title>
 			FTTechnologies Expands to Argentina & Mexico, Unveiling a Major
@@ -100,11 +84,9 @@
 		/>
 	</head>
 	<body>
-		<script type="module" src="/scripts/cookieconsent-config.js"></script>
-
 		<!-- Component: Basic Navbar -->
 		<header
-			class="relative z-20 w-full xl:pt-10 bg-white/90 shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 xl:border-slate-200 xl:backdrop-blur-sm xl:after:hidden"
+			class="relative focus-within:fixed top-0 left-0 z-50 w-full xl:pt-10 bg-white/90 shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 xl:border-slate-200 xl:backdrop-blur-sm xl:after:hidden"
 		>
 			<div
 				class="relative max-w-full px-5 mx-auto 2xl:ps-36 2xl:pe-32 duration-500"
@@ -132,11 +114,13 @@
 						/> -->
 						<span class="sr-only">FTTechnologies Logo</span>
 					</a>
+
 					<!-- Mobile trigger -->
 					<button
-						class="peer group/menu relative self-center order-10 visible block w-10 h-10 opacity-100 xl:hidden focus:!bg-custom-main focus:text-white duration-300 rounded-lg"
+						class="peer group/menu aspect-square relative self-center !z-50 order-10 visible block w-10 h-10 opacity-100 xl:hidden focus:!bg-custom-main focus:text-white duration-300 rounded-lg"
 						aria-expanded="false"
 						aria-label="Toggle navigation"
+						tabindex="0"
 					>
 						<div
 							class="absolute w-6 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
@@ -154,12 +138,81 @@
 								class="absolute block h-0.5 w-1/2 origin-top-left translate-y-2 transform rounded-full group-focus/menu:bg-white bg-slate-900 transition-all duration-300"
 							></span>
 						</div>
+						<span class="sr-only">Menu</span>
 					</button>
+
+					<ul
+						role="menubar"
+						aria-label="Select page"
+						class="translate-x-full xl:hidden delay-100 peer-focus:translate-x-0 text-lg text-custom-main px-6 top-22 text-right flex flex-col h-screen right-0 w-full bg-white/90 items-end pt-4 gap-1 items-center fixed left-0 z-50"
+					>
+						<li role="none" class="flex items-stretch">
+							<a
+								role="menuitem"
+								aria-haspopup="false"
+								class="flex w-full h-10 xl:h-auto items-center justify-end xl:items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none xl:px-1"
+								href="/#our-solutions"
+							>
+								<span>Our Solutions</span></a
+							>
+						</li>
+						<li role="none" class="flex items-stretch">
+							<a
+								role="menuitem"
+								aria-haspopup="false"
+								class="flex w-full h-10 xl:h-auto items-center justify-end xl:items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none xl:px-1"
+								href="/#partners-and-clients"
+							>
+								<span>Partners and Clients</span></a
+							>
+						</li>
+						<li role="none" class="flex items-stretch">
+							<a
+								role="menuitem"
+								aria-haspopup="false"
+								class="flex w-full h-10 xl:h-auto items-center justify-end xl:items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none xl:px-1"
+								href="/#certifications"
+							>
+								<span>Certifications</span></a
+							>
+						</li>
+						<li role="none" class="flex items-stretch">
+							<a
+								role="menuitem"
+								aria-haspopup="false"
+								class="flex w-full h-10 xl:h-auto items-center justify-end xl:items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none xl:px-1"
+								href="/#about-us"
+							>
+								<span>About Us</span></a
+							>
+						</li>
+						<li role="none" class="flex items-stretch">
+							<a
+								role="menuitem"
+								aria-haspopup="false"
+								class="flex w-full h-10 xl:h-auto items-center justify-end xl:items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none xl:px-1"
+								href="/#newsroom"
+							>
+								<span>Newsroom</span></a
+							>
+						</li>
+						<li role="none" class="flex items-stretch">
+							<a
+								role="menuitem"
+								aria-haspopup="false"
+								class="flex w-full h-10 xl:h-auto items-center justify-end xl:items-end gap-2 transition-colors duration-300 hover:text-custom-secondary focus:text-emerald-600 focus:outline-none focus-visible:outline-none xl:px-1"
+								href="/#contact"
+							>
+								<span>Contact Us</span></a
+							>
+						</li>
+					</ul>
+
 					<!-- Navigation links -->
 					<ul
 						role="menubar"
 						aria-label="Select page"
-						class="pointer-events-none md:pointer-events-auto peer-focus:pointer-events-normal peer-focus:opacity-100 opacity-0 text-lg text-custom-main xl:pb-5 xl:px-4 font-normal absolute top-0 left-0 z-[-1] ml-auto xl:gap-4 h-screen w-full justify-center overflow-hidden overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-28 font-medium transition-[opacity,visibility] duration-300 xl:visible xl:relative xl:top-0 xl:z-0 xl:flex xl:h-full xl:w-auto xl:items-stretch xl:overflow-visible xl:bg-white/0 xl:px-0 xl:py-0 xl:pt-0 xl:opacity-100"
+						class="text-lg text-custom-main gap-4 hidden xl:flex items-center px-1"
 					>
 						<li role="none" class="flex items-stretch">
 							<a
@@ -838,7 +891,6 @@
 							</li>
 							<li class="mb-2 leading-6">
 								<a
-									onclick="CookieConsent.show(true)"
 									href="#cookies"
 									class="transition-colors duration-300 opacity-75 hover:opacity-100"
 								>
