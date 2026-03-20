@@ -478,5 +478,18 @@
 			icon: textIcon,
 			interactive: false, // Para que no interfiera con los clics en el mapa
 		}).addTo(map);
+
+		// Creamos el icono que contiene el HTML
+		const hawaiiHide = L.divIcon({
+			className: 'bg-white', // Nuestra clase CSS
+			html: '',
+			iconSize: [120, 100], // Tamaño aproximado del recuadro
+			iconAnchor: [0, 0], // Centramos el punto de anclaje
+		});
+
+		const hawaiiMarker = L.marker([35, -165], {
+			icon: hawaiiHide,
+			interactive: false, // Para que no interfiera con los clics en el mapa
+		}).addTo(map);
 	</script>
 </html>
