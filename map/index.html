@@ -119,7 +119,7 @@
 			<div class="border-l border-gray-200"></div>
 		</div>
 		<div id="map-label" class="hidden">
-			<div class="text-gray-600 text-xs bg-white/50 rounded px-5 py-3">
+			<div class="text-gray-600 text-xs bg-white/50 rounded px-2 py-3">
 				<div class="flex items-center gap-1">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -469,12 +469,12 @@
 		const textIcon = L.divIcon({
 			className: '', // Nuestra clase CSS
 			html: labelContent.innerHTML,
-			iconSize: [, 0], // Tamaño aproximado del recuadro
-			iconAnchor: [350, 20], // Centramos el punto de anclaje
+			iconSize: [210, 0], // Tamaño aproximado del recuadro
+			iconAnchor: [250, 0], // Centramos el punto de anclaje
 		});
 
 		// Lo situamos en una coordenada fija (ejemplo: cerca de la frontera entre Perú y Brasil)
-		const textMarker = L.marker([-8.0, -65.0], {
+		const textMarker = L.marker([-8.0, -75], {
 			icon: textIcon,
 			interactive: false, // Para que no interfiera con los clics en el mapa
 		}).addTo(map);
