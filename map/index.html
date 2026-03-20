@@ -40,14 +40,6 @@
 			}
 
 			/* Estilo para el marcador circular rojo */
-			.red-marker {
-				background-color: #ff4444;
-				border: 2px solid #fff;
-				border-radius: 50%;
-				width: 12px;
-				height: 12px;
-				box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-			}
 
 			/* Elimina el borde de enfoque (outline) en los elementos del mapa */
 			.leaflet-interactive {
@@ -121,12 +113,187 @@
 	</head>
 	<body>
 		<div class="w-full grid xl:grid-cols-5 xl:h-screen">
-			<div id="map" class="xl:col-span-2 h-screen xl:h-auto"></div>
+			<div class="xl:col-span-2 h-screen xl:h-auto relative">
+				<div id="map" class="h-full"></div>
+			</div>
 			<div class="border-l border-gray-200"></div>
+		</div>
+		<div id="map-label" class="">
+			<div class="text-gray-600 text-xs">
+				<div class="flex items-center gap-1">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="size-5 text-sky-700"
+						viewBox="0 0 24 24"
+					>
+						<path
+							fill="currentColor"
+							d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"
+						/>
+					</svg>
+					5 Offices
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="size-5"
+						viewBox="0 0 72 72"
+					>
+						<path fill="#fff" d="M5 17h62v38H5z" />
+						<path fill="#5c9e31" d="M5 17h21v38H5z" />
+						<path fill="#d22f27" d="M46 17h21v38H46z" />
+						<circle
+							cx="36"
+							cy="35"
+							r="3.5"
+							fill="#a57939"
+							stroke="#a57939"
+							stroke-miterlimit="10"
+							stroke-width="2"
+						/>
+						<path
+							fill="none"
+							stroke="#5c9e31"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M30 39.486a7.48 7.48 0 0 0 12 0"
+						/>
+						<path
+							fill="none"
+							stroke="#000"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M5 17h62v38H5z"
+						/>
+					</svg>
+
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="size-5"
+						viewBox="0 0 72 72"
+					>
+						<path fill="#fff" d="M5 17h62v38H5z" />
+						<path fill="#61b2e4" d="M5 17h62v13H5zm0 25h62v13H5z" />
+						<circle cx="36" cy="36" r="1.5" fill="#61b2e4" />
+						<circle cx="43" cy="39" r="1.5" fill="#61b2e4" />
+						<circle cx="43" cy="33" r="1.5" fill="#61b2e4" />
+						<circle cx="29" cy="39" r="1.5" fill="#61b2e4" />
+						<circle cx="29" cy="33" r="1.5" fill="#61b2e4" />
+						<path
+							fill="none"
+							stroke="#000"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M5 17h62v38H5z"
+						/>
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="size-5"
+						viewBox="0 0 72 72"
+					>
+						<path fill="#fff" d="M5 17h62v38H5z" />
+						<path fill="#d22f27" d="M5 29.5h62v13H5z" />
+						<path fill="#1e50a0" d="M5 49h62v6H5zm0-32h62v6H5z" />
+						<path
+							fill="none"
+							stroke="#000"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M5 17h62v38H5z"
+						/>
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="size-5"
+						viewBox="0 0 72 72"
+					>
+						<path fill="#1e50a0" d="M5 17h62v38H5z" />
+						<path fill="#fff" d="M5 17h62v38H5z" />
+						<path fill="#61b2e4" d="M5 42h62v13H5zm0-25h62v13H5z" />
+						<path
+							fill="#f1b31c"
+							stroke="#f1b31c"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M36 33.897L37.236 32l-.06 2.299l2.06-.771l-1.334 1.822L40 36l-2.098.65l1.334 1.822l-2.06-.771l.06 2.299L36 38.103L34.764 40l.06-2.299l-2.06.771l1.334-1.822L32 36l2.098-.65l-1.334-1.822l2.06.771l-.06-2.299z"
+							stroke-width="1"
+						/>
+						<path
+							fill="none"
+							stroke="#000"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M5 17h62v38H5z"
+						/>
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="size-5"
+						viewBox="0 0 72 72"
+					>
+						<path fill="#fff" d="M5 17h62v38H5z" />
+						<path fill="#1e50a0" d="M5 36h31v19H5z" />
+						<path fill="#d22f27" d="M36 17h31v19H36z" />
+						<path
+							fill="#1e50a0"
+							stroke="#1e50a0"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="m18.962 29.167l1.659-5l1.431 4.924l-3.974-2.967l5-.123z"
+							stroke-width="1"
+						/>
+						<path
+							fill="#d22f27"
+							stroke="#d22f27"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="m50.962 48.167l1.659-5l1.431 4.924l-3.974-2.967l5-.123z"
+							stroke-width="1"
+						/>
+						<path
+							fill="none"
+							stroke="#000"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M5 17h62v38H5z"
+						/>
+					</svg>
+				</div>
+				<div class="flex items-center gap-1">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="size-5 text-orange-500"
+						viewBox="0 0 24 24"
+					>
+						<path
+							fill="currentColor"
+							d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"
+						/>
+					</svg>
+					15 Countries with Clients
+				</div>
+			</div>
 		</div>
 	</body>
 
 	<script>
+		const redMarker = `<svg xmlns="http://www.w3.org/2000/svg" class="size-5 text-orange-500 -translate-x-1 -translate-y-2" viewBox="0 0 24 24"><path fill="currentColor" d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"/></svg>`;
+		const blueMarker = `<svg xmlns="http://www.w3.org/2000/svg" class="size-7 text-sky-700 -translate-x-2 -translate-y-4" viewBox="0 0 24 24"><path fill="currentColor" d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"/></svg>`;
+
+		const paises = [
+			'brazil',
+			'costa rica',
+			'venezuela',
+			'mexico',
+			'panama',
+			'argentina',
+			'honduras',
+		];
 		const map = L.map('map', {
 			attributionControl: false,
 			zoomSnap: 0.1,
@@ -149,9 +316,14 @@
 						const isGreenland = name === 'Greenland';
 						return isAmerica && !isGreenland;
 					},
-					style: function () {
+					style: function (feature) {
+						const name = feature.properties.name;
+
+						// console.log(paises.includes(name.toLowerCase()));
 						return {
-							fillColor: '#aaa', // Gris base
+							fillColor: paises.includes(name.toLowerCase())
+								? 'oklch(70.5% 0.213 47.604)'
+								: '#aaa', // Gris base
 							color: '#ddd', // Línea de frontera sutil blanca (opcional)
 							weight: 1,
 							fillOpacity: 0.8, // Un poco de transparencia base
@@ -171,7 +343,7 @@
 							mouseover: function (e) {
 								const l = e.target;
 								l.setStyle({
-									fillColor: '#555555', // Gris más oscuro al pasar el cursor
+									// fillColor: '#555555', // Gris más oscuro al pasar el cursor
 									fillOpacity: 1,
 								});
 								l.bringToFront(); // Evita que los bordes se vean mal
@@ -179,7 +351,7 @@
 							mouseout: function (e) {
 								const l = e.target;
 								l.setStyle({
-									fillColor: '#aaa', // Vuelve al gris original
+									// fillColor: '#aaa', // Vuelve al gris original
 									fillOpacity: 0.8,
 								});
 							},
@@ -196,51 +368,87 @@
 			});
 
 		const companies = [
-			// Centroamérica (Costa Rica hacia abajo)
+			// Panamá (Centro)
+			{ name: 'Pacific Canal Services', lat: 8.538, lng: -80.7821 },
+			{ name: 'Isthmus FinTech', lat: 8.538, lng: -80.7821 },
+			{ name: 'Cloud Darién', lat: 8.538, lng: -80.7821 },
+
+			// Colombia
+			{ name: 'Coffee Valley Systems', lat: 4.5709, lng: -74.2973 },
+			{ name: 'Medellín Innovation Lab', lat: 4.5709, lng: -74.2973 },
+			{ name: 'Caribbean Trade Co.', lat: 4.5709, lng: -74.2973 },
+
+			// Venezuela
+			{ name: 'Orinoco Energy', lat: 6.4238, lng: -66.5897 },
+
+			// Ecuador
+			{ name: 'Equator Software', lat: -1.8312, lng: -78.1834 },
+
+			// Perú
+			{ name: 'Inca Digital Assets', lat: -9.19, lng: -75.0152 },
+			{ name: 'Andean Mining Tech', lat: -9.19, lng: -75.0152 },
+
+			// Brasil
+			{ name: 'Amazonas Data Center', lat: -14.235, lng: -51.9253 },
+			{ name: 'Paulista Ventures', lat: -14.235, lng: -51.9253 },
+
+			// Bolivia
+			{ name: 'Altiplano Solutions', lat: -16.2902, lng: -63.5887 },
+
+			// Paraguay
+			{ name: 'Guaraní Agrotech', lat: -23.4425, lng: -58.4438 },
+
+			// Chile
+			{ name: 'Southern Star Mining', lat: -35.6751, lng: -71.543 },
+
+			// Argentina
+			{ name: 'Pampa Renewable Energy', lat: -38.4161, lng: -63.6167 },
+		];
+
+		const offices = [
 			{ name: 'Tico Global Logistics', lat: 9.9281, lng: -84.0907 }, // San José, CR
-			{ name: 'Pacific Canal Services', lat: 8.9833, lng: -79.5167 }, // Ciudad de Panamá, PA
-			{ name: 'Isthmus FinTech', lat: 9.4167, lng: -82.5167 }, // Bocas del Toro, PA
-			{ name: 'Cloud Darién', lat: 8.4109, lng: -77.9162 }, // La Palma, PA
-
-			// Colombia y Venezuela
-			{ name: 'Coffee Valley Systems', lat: 4.611, lng: -74.0721 }, // Bogotá, CO
-			{ name: 'Medellín Innovation Lab', lat: 6.2442, lng: -75.5812 }, // Medellín, CO
-			{ name: 'Caribbean Trade Co.', lat: 10.9639, lng: -74.7964 }, // Barranquilla, CO
-			{ name: 'Orinoco Energy', lat: 10.4806, lng: -66.8983 }, // Caracas, VE
-
-			// Ecuador y Perú
-			{ name: 'Equator Software', lat: -0.1807, lng: -78.4678 }, // Quito, EC
 			{ name: 'Guayas Marine Group', lat: -2.17, lng: -79.9224 }, // Guayaquil, EC
-			{ name: 'Inca Digital Assets', lat: -12.0464, lng: -77.0428 }, // Lima, PE
-			{ name: 'Andean Mining Tech', lat: -16.409, lng: -71.5375 }, // Arequipa, PE
-
-			// Brasil (Amazonía y Costa)
-			{ name: 'Amazonas Data Center', lat: -3.119, lng: -60.0217 }, // Manaos, BR
 			{ name: 'Carioca Creative', lat: -22.9068, lng: -43.1729 }, // Río, BR
-			{ name: 'Paulista Ventures', lat: -23.5505, lng: -46.6333 }, // São Paulo, BR
-
-			// Bolivia, Paraguay y Uruguay
-			{ name: 'Altiplano Solutions', lat: -16.4897, lng: -68.1193 }, // La Paz, BO
-			{ name: 'Guaraní Agrotech', lat: -25.2637, lng: -57.5759 }, // Asunción, PY
 			{ name: 'Rioplatense Devs', lat: -34.9011, lng: -56.1645 }, // Montevideo, UY
-
-			// Chile y Argentina
-			{ name: 'Southern Star Mining', lat: -33.4489, lng: -70.6693 }, // Santiago, CL
-			{ name: 'Pampa Renewable Energy', lat: -34.6037, lng: -58.3816 }, // Buenos Aires, AR
 			{ name: 'Patagonia Cold Storage', lat: -54.8019, lng: -68.303 }, // Ushuaia, AR
 		];
 
 		// Icono personalizado rojo
 		const redIcon = L.divIcon({
+			html: redMarker,
+			className: 'red-marker',
+			iconSize: [12, 12],
+			iconAnchor: [6, 6],
+		});
+
+		// Icono personalizado rojo
+		const blueIcon = L.divIcon({
+			html: blueMarker,
 			className: 'red-marker',
 			iconSize: [12, 12],
 			iconAnchor: [6, 6],
 		});
 
 		// Añadir los marcadores al mapa
-		companies.forEach((company) => {
+		// companies.forEach((company) => {
+		// 	const marker = L.marker([company.lat, company.lng], {
+		// 		icon: redIcon,
+		// 	}).addTo(map);
+
+		// 	// Configurar el Tooltip para la compañía
+		// 	marker.bindTooltip(company.name, {
+		// 		permanent: false,
+		// 		direction: 'top',
+		// 		className: 'custom-tooltip', // Reutilizamos el estilo negro que creamos antes
+		// 	});
+
+		// 	// Opcional: Efecto al pasar el mouse por el marcador
+		// });
+
+		// Añadir los marcadores al mapa
+		offices.forEach((company) => {
 			const marker = L.marker([company.lat, company.lng], {
-				icon: redIcon,
+				icon: blueIcon,
 			}).addTo(map);
 
 			// Configurar el Tooltip para la compañía
@@ -251,18 +459,24 @@
 			});
 
 			// Opcional: Efecto al pasar el mouse por el marcador
-			marker.on('mouseover', function () {
-				this.getElement().style.transform += ' scale(1.5)';
-				this.getElement().style.backgroundColor = '#ff0000';
-			});
-			marker.on('mouseout', function () {
-				this.getElement().style.transform =
-					this.getElement().style.transform.replace(
-						' scale(1.5)',
-						'',
-					);
-				this.getElement().style.backgroundColor = '#ff4444';
-			});
 		});
+
+		// Definimos el contenido del div
+		const labelContent = document.getElementById('map-label');
+		// console.log(labelContent);
+
+		// Creamos el icono que contiene el HTML
+		const textIcon = L.divIcon({
+			className: '', // Nuestra clase CSS
+			html: labelContent.innerHTML,
+			iconSize: [200, 0], // Tamaño aproximado del recuadro
+			iconAnchor: [350, 20], // Centramos el punto de anclaje
+		});
+
+		// Lo situamos en una coordenada fija (ejemplo: cerca de la frontera entre Perú y Brasil)
+		const textMarker = L.marker([-8.0, -65.0], {
+			icon: textIcon,
+			interactive: false, // Para que no interfiera con los clics en el mapa
+		}).addTo(map);
 	</script>
 </html>
