@@ -295,8 +295,7 @@
 			zoomControl: false,
 		}).setView([40, -85], 2.3);
 
-		const geoJsonUrl =
-			'https://raw.githubusercontent.com/datasets/geo-boundaries-world-110m/master/countries.geojson';
+		const geoJsonUrl = '/map/countries.geojson';
 
 		fetch(geoJsonUrl)
 			.then((res) => res.json())
