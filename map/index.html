@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+		/>
+		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+			* {
+				font-family: 'Open Sans', sans-serif;
+			}
+			html {
+				scroll-behavior: smooth;
+			}
+		</style>
+
+		<style type="text/tailwindcss">
+			@theme {
+				--color-custom-main: #003da5;
+				--color-custom-secondary: #7c878e;
+				--color-custom-accent: #013da5;
+				--color-custom-bg-gray: #252526;
+			}
+
+			#map {
+				width: 100%;
+				/* Fondo transparente para el contenedor */
+				background-color: transparent !important;
+			}
+			body {
+				/* Fondo de tu web para probar la transparencia */
+				background: #ffffff;
+			}
+
+			/* Estilo para el marcador circular rojo */
+			.red-marker {
+				background-color: #ff4444;
+				border: 2px solid #fff;
+				border-radius: 50%;
+				width: 12px;
+				height: 12px;
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+			}
+
+			/* Elimina el borde de enfoque (outline) en los elementos del mapa */
+			.leaflet-interactive {
+				outline: none !important;
+			}
+
+			/* Si quieres ser más específico para navegadores basados en Chromium */
+			path.leaflet-interactive:focus {
+				outline: none !important;
+			}
+		</style>
+
+		<title>
+			FTTechnologies Expands to Argentina & Mexico, Unveiling a Major
+			Rebrand | FTTechnologies
+		</title>
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<meta name="author" content="FTTechnologies" />
+
+		<meta
+			name="title"
+			content="FTTechnologies Expands to Argentina & Mexico, Unveiling a Major
+			Rebrand | FTTechnologies"
+		/>
+		<meta
+			name="description"
+			content="This is a pivotal moment for FTTechnologies as we accelerate our mission to Innovating the Way We Pay."
+		/>
+		<meta
+			name="keywords"
+			content="financial transactions technology, payment software, tap to phone, tap2phone, p2p, contactless payments"
+		/>
+		<meta name="robots" content="index, follow" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="language" content="English" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="article" />
+		<!-- <meta property="og:url" content="https://metatags.io/" /> -->
+		<meta
+			property="og:title"
+			content="FTTechnologies Expands to Argentina & Mexico, Unveiling a Major
+			Rebrand | FTTechnologies"
+		/>
+		<meta
+			property="og:description"
+			content="This is a pivotal moment for FTTechnologies as we accelerate our mission to Innovating the Way We Pay."
+		/>
+		<meta
+			property="og:image"
+			content="/assets/articles/rebrand_article.png"
+		/>
+
+		<!-- X (Twitter) -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<!-- <meta property="twitter:url" content="https://metatags.io/" /> -->
+		<meta
+			property="twitter:title"
+			content="FTTechnologies Expands to Argentina & Mexico, Unveiling a Major
+			Rebrand | FTTechnologies"
+		/>
+		<meta
+			property="twitter:description"
+			content="This is a pivotal moment for FTTechnologies as we accelerate our mission to Innovating the Way We Pay."
+		/>
+		<meta
+			property="twitter:image"
+			content="/assets/articles/rebrand_article.png"
+		/>
+	</head>
+	<body>
+		<div class="w-full grid grid-cols-5 h-screen">
+			<div id="map" class="col-span-2"></div>
+			<div class="border-l border-gray-200"></div>
+		</div>
+	</body>
+
+	<script>
+		const map = L.map('map', {
+			attributionControl: false,
+			zoomSnap: 0.1,
+			zoomControl: false,
+		}).setView([40, -85], 2.3);
+
+		const geoJsonUrl =
+			'https://raw.githubusercontent.com/datasets/geo-boundaries-world-110m/master/countries.geojson';
+
+		fetch(geoJsonUrl)
+			.then((res) => res.json())
+			.then((data) => {
+				L.geoJSON(data, {
+					filter: function (feature) {
+						const name = feature.properties.name;
+						const continent = feature.properties.continent;
+						const isAmerica =
+							continent === 'North America' ||
+							continent === 'South America';
+						const isGreenland = name === 'Greenland';
+						return isAmerica && !isGreenland;
+					},
+					style: function () {
+						return {
+							fillColor: '#aaa', // Gris base
+							color: '#ddd', // Línea de frontera sutil blanca (opcional)
+							weight: 1,
+							fillOpacity: 0.8, // Un poco de transparencia base
+						};
+					},
+					onEachFeature: function (feature, layer) {
+						// 1. Mostrar el nombre al pasar el cursor (Tooltip)
+						layer.bindTooltip(feature.properties.name, {
+							sticky: true, // La etiqueta sigue al cursor
+							permanent: false,
+							direction: 'top',
+							className: 'custom-tooltip', // Clase para estilo CSS
+						});
+
+						// 2. Efectos visuales al pasar el cursor
+						layer.on({
+							mouseover: function (e) {
+								const l = e.target;
+								l.setStyle({
+									fillColor: '#555555', // Gris más oscuro al pasar el cursor
+									fillOpacity: 1,
+								});
+								l.bringToFront(); // Evita que los bordes se vean mal
+							},
+							mouseout: function (e) {
+								const l = e.target;
+								l.setStyle({
+									fillColor: '#aaa', // Vuelve al gris original
+									fillOpacity: 0.8,
+								});
+							},
+						});
+					},
+				}).addTo(map);
+
+				// Ajuste de encuadre para las Américas
+				const bounds = L.latLngBounds([
+					[-56, -110],
+					[75, -35],
+				]);
+				// map.fitBounds(bounds);
+			});
+
+		const companies = [
+			// Centroamérica (Costa Rica hacia abajo)
+			{ name: 'Tico Global Logistics', lat: 9.9281, lng: -84.0907 }, // San José, CR
+			{ name: 'Pacific Canal Services', lat: 8.9833, lng: -79.5167 }, // Ciudad de Panamá, PA
+			{ name: 'Isthmus FinTech', lat: 9.4167, lng: -82.5167 }, // Bocas del Toro, PA
+			{ name: 'Cloud Darién', lat: 8.4109, lng: -77.9162 }, // La Palma, PA
+
+			// Colombia y Venezuela
+			{ name: 'Coffee Valley Systems', lat: 4.611, lng: -74.0721 }, // Bogotá, CO
+			{ name: 'Medellín Innovation Lab', lat: 6.2442, lng: -75.5812 }, // Medellín, CO
+			{ name: 'Caribbean Trade Co.', lat: 10.9639, lng: -74.7964 }, // Barranquilla, CO
+			{ name: 'Orinoco Energy', lat: 10.4806, lng: -66.8983 }, // Caracas, VE
+
+			// Ecuador y Perú
+			{ name: 'Equator Software', lat: -0.1807, lng: -78.4678 }, // Quito, EC
+			{ name: 'Guayas Marine Group', lat: -2.17, lng: -79.9224 }, // Guayaquil, EC
+			{ name: 'Inca Digital Assets', lat: -12.0464, lng: -77.0428 }, // Lima, PE
+			{ name: 'Andean Mining Tech', lat: -16.409, lng: -71.5375 }, // Arequipa, PE
+
+			// Brasil (Amazonía y Costa)
+			{ name: 'Amazonas Data Center', lat: -3.119, lng: -60.0217 }, // Manaos, BR
+			{ name: 'Carioca Creative', lat: -22.9068, lng: -43.1729 }, // Río, BR
+			{ name: 'Paulista Ventures', lat: -23.5505, lng: -46.6333 }, // São Paulo, BR
+
+			// Bolivia, Paraguay y Uruguay
+			{ name: 'Altiplano Solutions', lat: -16.4897, lng: -68.1193 }, // La Paz, BO
+			{ name: 'Guaraní Agrotech', lat: -25.2637, lng: -57.5759 }, // Asunción, PY
+			{ name: 'Rioplatense Devs', lat: -34.9011, lng: -56.1645 }, // Montevideo, UY
+
+			// Chile y Argentina
+			{ name: 'Southern Star Mining', lat: -33.4489, lng: -70.6693 }, // Santiago, CL
+			{ name: 'Pampa Renewable Energy', lat: -34.6037, lng: -58.3816 }, // Buenos Aires, AR
+			{ name: 'Patagonia Cold Storage', lat: -54.8019, lng: -68.303 }, // Ushuaia, AR
+		];
+
+		// Icono personalizado rojo
+		const redIcon = L.divIcon({
+			className: 'red-marker',
+			iconSize: [12, 12],
+			iconAnchor: [6, 6],
+		});
+
+		// Añadir los marcadores al mapa
+		companies.forEach((company) => {
+			const marker = L.marker([company.lat, company.lng], {
+				icon: redIcon,
+			}).addTo(map);
+
+			// Configurar el Tooltip para la compañía
+			marker.bindTooltip(company.name, {
+				permanent: false,
+				direction: 'top',
+				className: 'custom-tooltip', // Reutilizamos el estilo negro que creamos antes
+			});
+
+			// Opcional: Efecto al pasar el mouse por el marcador
+			marker.on('mouseover', function () {
+				this.getElement().style.transform += ' scale(1.5)';
+				this.getElement().style.backgroundColor = '#ff0000';
+			});
+			marker.on('mouseout', function () {
+				this.getElement().style.transform =
+					this.getElement().style.transform.replace(
+						' scale(1.5)',
+						'',
+					);
+				this.getElement().style.backgroundColor = '#ff4444';
+			});
+		});
+	</script>
+</html>
