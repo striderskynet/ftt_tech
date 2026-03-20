@@ -325,6 +325,8 @@
 						};
 					},
 					onEachFeature: function (feature, layer) {
+						const name = feature.properties.name;
+						if (!paises.includes(name.toLowerCase())) return;
 						// 1. Mostrar el nombre al pasar el cursor (Tooltip)
 						layer.bindTooltip(feature.properties.name, {
 							sticky: true, // La etiqueta sigue al cursor
